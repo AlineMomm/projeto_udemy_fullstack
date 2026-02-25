@@ -1,0 +1,49 @@
+body {
+    padding-right: 15%;
+    background: rgb(206, 194, 172) url(img/fundo.PNG);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#links {
+    background-color: rgb(206, 194, 172);
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+#links>a {
+    color: rgb(63, 62, 62);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#links>a:hover {
+    color: rgb(206, 194, 172);
+    background-color: rgb(63, 62, 62);
+    padding: 10px;
+}
+
+#imagem-topo {
+    width: 100%;
+    height: 50%;
+}
+
+#sobre, #biografia, #campanhas, #contato {
+    background-color: rgb(226, 218, 202);
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+}
+
+#direitos {
+    font-weight: bold;
+    text-align: center;
+}
+
+.titulo{
+    color: rgb(63, 62, 62);
+}
+
+p {
+    text-align: justify;
+}

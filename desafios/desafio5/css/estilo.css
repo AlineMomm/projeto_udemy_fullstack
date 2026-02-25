@@ -1,0 +1,21 @@
+a {
+    color: green;
+}
+
+p {
+    color: orange;
+}
+
+li {
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+
+table {
+    border: 5px solid darkred;
+    background-color: orange;
+}
+
+td {
+    border: 5px solid black;
+}

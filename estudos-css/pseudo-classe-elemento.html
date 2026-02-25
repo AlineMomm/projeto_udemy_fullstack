@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe e pseudo-elemento</title>
+    <style>        
+    
+        div:hover {
+                background: lightgray;
+        }
+        
+        a {
+            text-decoration: none;
+            color: green;
+            padding: 0.5em 1em;
+        }
+        /*links não visitados
+
+        a:link {
+            background-color: lightblue;
+        }*/
+
+        /*links visitados*/
+
+        a:visited {
+            background-color: lightpink;
+        }
+
+        a:hover {
+            background-color: green;
+            color: white;
+        } 
+
+        /*links ativos*/
+        a:active {
+            background-color: darkgreen;
+            color: white;
+        }
+
+        /*Formulários*/
+
+        input:checked {
+            margin-left: 20px;
+        }
+
+        input:focus {
+            background: lightblue;
+        }
+
+        input:required {
+            border: 2px solid red;
+        }
+
+        /*Pseudo elementos*/
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+        }
+        
+        p::selection {
+            background: yellow;
+        }
+
+        h2::before {
+            content: "Título: ";
+            color: blue;
+        }
+
+        h2::after {
+            content: " (clique aqui)";
+            color: orange;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div>
+        Conteúdo da DIV
+    </div>
+
+    <h2>Conteúdo do H2</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci magni facilis accusantium saepe numquam doloremque? Laboriosam explicabo provident sapiente natus id odit tempore, odio, rerum distinctio iste consectetur nisi deserunt.
+    </p>
+
+    <a href="https://www.google.com/">Google</a> | 
+    <a href="">Facebook</a> |
+    <a href="">Instagram</a>
+
+    <h2>Formulário</h2>
+    <input type="checkbox"> aceito 
+    <br>
+    <input type="radio" name="opcao"> Sim
+    <br>
+    <input type="radio" name="opcao"> Não
+    <br>
+    <input type="text" required placeholder="Digite seu nome">
+</body>
+</html>

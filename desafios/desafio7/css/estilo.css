@@ -1,0 +1,13 @@
+h1 {
+    background-color: orange;
+    color: white;
+    border: 4px solid rgb(194, 127, 2);
+    padding: 20px;
+}
+
+p {
+    background-color: #ee0808;
+    border: gray solid 4px;
+    padding: 10px;
+    font-weight: bold;
+}

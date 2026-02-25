@@ -1,0 +1,35 @@
+#topo {
+    background-color: blue;
+    padding: 10px;
+}
+
+a {
+    color : blue;
+    background-color: lightblue;
+    padding: 6px;
+    margin: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+body {
+    margin: 0;
+}
+
+#promocao {
+    background-color: purple;
+}
+
+#conteudo {
+    width: 1000px;
+    margin: 10px auto;
+}
+
+#destaque {
+    background-color: blue;
+    color: lightblue;
+    padding: 5px;
+    border-radius: 10px;
+    width: 1000px;
+    margin: 10px auto;
+}

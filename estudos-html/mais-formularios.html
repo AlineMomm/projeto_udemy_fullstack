@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais formularios</title>
+</head>
+<body>
+    <h1>Mais formularios</h1>
+
+    <!--
+        label -> legenda para item da interface
+        for -> para
+    -->
+
+    <label>
+        Nome:
+        <input type="text" name="nome">
+    </label>
+
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+
+    <br>
+
+    Genero <br>
+    <input type="radio" name="genero" value="feminino" id="feminino">
+    <label for="feminino">Feminino</label>
+
+    <input type="radio" name="genero" value="masculino" id="masculino">
+    <label for="masculino">Masculino</label>
+
+    <br> <br>
+    Estilo musical <br>
+    <input type="checkbox" name="estilo" value="rock" id="rock">
+    <label for="rock">Rock</label>
+
+    <input type="checkbox" name="estilo" value="pop" id="pop">
+    <label for="pop">Pop</label>
+
+    <input type="checkbox" name="estilo" value="sertanejo" id="sertanejo">
+    <label for="sertanejo">Sertanejo</label>
+
+    <br> <br>
+    Estado:
+    <select name="estado" id="estado">
+        <option value="">Selecione</option>
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="mg">Minas Gerais</option>
+    </select>
+
+    <br><br>
+    Upload de arquivo:
+    <input type="file" name="arquivo">
+
+    <br><br>
+    <input type="submit" value="Cadastrar">
+
+    <br><br>
+
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome2">Nome:</label>
+        <input type="text" name="nome2" id="nome2">
+
+        <label for="email2">Email:</label>
+        <input type="text" name="email2" id="email2">
+    </fieldset>
+    <fieldset>
+        <legend>Dados Adicionais</legend>
+        
+        <input type="radio" name="genero2" value="feminino2" id="feminino2">
+        <label for="feminino2">Feminino</label>
+
+        <input type="radio" name="genero2" value="masculino2" id="masculino2">
+        <label for="masculino2">Masculino</label>
+
+    </fieldset>
+</body>
+</html>

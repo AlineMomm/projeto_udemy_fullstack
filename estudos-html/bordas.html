@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+</head>
+
+    <style>
+        /* 
+            espessura: border-width
+            cor: border-color
+            estilo: border-style
+        */
+
+        h1 {
+            border-width: 5px;
+            border-color: red;
+            border-style: solid;
+            /* 
+            forma resumida de escrever as propriedades de borda  
+            */
+            border: 5px solid red; 
+            
+            /* 
+            superior-lateral direita-inferior-lateral esquerda 
+            */
+            border-width: 10px 8px 6px 4px;
+            border-color: red green blue yellow;
+            border-style: solid dashed dotted double;
+
+            /* Apenas uma borda */
+            border-top-width: 5px;
+            border-top-color: purple;
+            border-top-style: solid;
+
+            /* Modo resumido apenas uma borda */
+            border-top: 4px solid red;
+            border-right: 4px solid blue;
+            border-bottom: 4px solid green;
+            border-left: 4px solid yellow;
+
+            /* Como arreondar as bordas */
+            border-radius: 10px;
+            /* arredonda apenas um canto */
+            border-top-left-radius: 10px;
+        }
+    </style>
+
+<body>
+    <h1>Título de exemplo</h1>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, ab? Nostrum saepe ipsam a ipsum dignissimos magnam inventore doloremque est nihil, vero quas laudantium in quisquam sed eum exercitationem adipisci.
+    </p>
+</body>
+</html>
