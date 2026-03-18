@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas Linhas e Gap</title>
+    <style>
+        body {
+            font-size: 3rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            /* grid-template-columns: [a] 1fr [b] 1fr [c] 1fr [d]; */
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        .item1  {
+            /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+            /* grid-area: 1 / 1 / 3 / 3; */
+            grid-area: span 2 / span 2;
+        }
+         .item2 {
+            /* grid-column: span 2; */
+         }
+         .item3 {
+            /* grid-column: span 2; */
+         } 
+         .item4 {
+            /* grid-row: span 2; */
+         }
+         .item7 {
+            /* grid-column: span 3; */
+         }
+        .grid > div {
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+    </div>
+</body>
+</html>

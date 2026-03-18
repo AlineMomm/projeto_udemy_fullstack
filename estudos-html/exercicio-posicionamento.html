@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio posicionamento</title>
+    <style>
+        body {
+            background-color: purple;
+        }
+
+        #container {
+            width: 700px;
+            background-color: white;
+            margin: 10px auto;
+            padding: 8px;
+            position: relative;
+        }
+        .borda {
+            border: 1px solid black;
+        }
+
+        .estatica /*Fluxo normal*/ {
+            position: static;
+        }
+
+        .relativa /*Posição relativa*/ {
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+            /* margin: empurra    o elemento estático ara baixo
+            margin-top: 40px;
+            */
+        }
+        .absoluta {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 500px;
+            margin: 0;
+        }
+        .fixa {
+            position: fixed;
+            width: 200px;
+            height: 120px;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="fixa" style="background-color: green;">
+            <h3>Chat</h3>
+            <button>Enviar mensagem</button>
+        </div>
+        <h1 class="borda">Posição absoluta</h1>
+        <p class="borda absoluta" style="background-color: lightpink;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perferendis labore nihil eos rem iusto porro velit, asperiores saepe iste eius nulla dolores, earum sapiente, nemo quas assumenda impedit sequi!
+        </p>
+
+        <h1 class="borda">Posição relativa</h1>
+        <p class="borda relativa" style="background-color: lightgreen;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perferendis labore nihil eos rem iusto porro velit, asperiores saepe iste eius nulla dolores, earum sapiente, nemo quas assumenda impedit sequi!
+        </p>
+        <p class="borda">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perferendis labore nihil eos rem iusto porro velit, asperiores saepe iste eius nulla dolores, earum sapiente, nemo quas assumenda impedit sequi!
+        </p>
+
+        <h1 class="borda">Fluxo normal</h1>
+        <p class="borda estatica">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perferendis labore nihil eos rem iusto porro velit, asperiores saepe iste eius nulla dolores, earum sapiente, nemo quas assumenda impedit sequi!
+        </p>
+    </div>
+</body>
+</html>

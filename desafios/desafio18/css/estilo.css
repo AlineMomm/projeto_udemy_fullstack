@@ -1,0 +1,157 @@
+body {
+    margin: 1em;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo {
+    width: 120px;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+nav {
+    display: flex;
+    flex-grow: 1;
+}
+nav > ul {
+    display: flex;
+    list-style-type: none;
+
+}
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+}
+header > nav > ul > li > a:hover {
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+}
+#botao-contato {
+    border: 1px solid blue;
+    border-radius: 50px;
+    background-color: white;
+    padding: 5px 20px;
+}
+#botao-contato > a {
+    text-decoration: none;
+    color: blue;
+}
+#botao-contato:hover {
+    background-color: rgb(245, 245, 255);
+}
+#botao-inscreva {
+    border: 1px solid white;
+    background-color: blue;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+#botao-inscreva > a {
+    color: white;
+    text-decoration: none;
+}
+#botao-inscreva:hover {
+    background-color: rgb(64, 64, 247);
+}
+.destaque {
+    color: blue;
+}
+
+#divulgacao-IA {grid-area: texto-ia;}
+#divulgacao {grid-area: imagem-divulgacao;}
+#divulgacao-solucao {grid-area: texto-solucao;}
+#containers-servicos {grid-area: containers;}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'texto-ia imagem-divulgacao'
+    'containers texto-solucao'
+    ;
+    align-items: center;
+}
+#divulgacao {
+    width: 500px;
+}
+#containers-servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-right: 20px;
+}
+.container {
+    border: 1px solid rgb(214, 214, 245);
+    height: 90px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.simbolo-container {
+    width: 35px;
+}
+#botao-conheca {
+    border: 1px solid white;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+#botao-conheca > a {
+    text-decoration: none;
+    color: white;
+}
+#botao-conheca:hover {
+    background-color: rgb(72, 72, 247);
+}
+#botao-explorar {
+    border: 1px solid blue;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+#botao-explorar > a {
+    text-decoration: none;
+    color: blue;
+}
+#botao-explorar:hover {
+    background-color: rgb(231, 231, 250);
+}
+footer {
+    margin-top: 2em;
+    background-color: rgb(230, 229, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+}
+#botao-registro {
+    border: 1px solid blue;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+#botao-registro > a {
+    text-decoration: none;
+    color: blue;
+}
+#botao-registro:hover {
+    background-color: rgb(231, 231, 250);
+}
+#botao-planos {
+    border: 1px solid white;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 50px;
+} 
+#botao-planos > a {
+    text-decoration: none;
+    color: white;
+}
+#botao-planos:hover {
+    background-color: rgb(72, 72, 247);
+}

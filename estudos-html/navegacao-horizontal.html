@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação Horizontal</title>
+    <style>
+        #menu ul {
+            list-style-type: none;
+            padding: 0.5em;
+            width: 720px;
+            background-color: #24252a;
+
+        }
+        #menu ul::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        #menu li a {
+            display: block;
+            padding: 0.5em 1.5em;
+            color: white;
+            text-decoration: none;
+            float: left;
+            margin: 0 0.5em;
+        }
+        #menu li a:hover {
+            background-color: #0582ac;
+            border-radius: 1.2em;
+        }
+        #menu li a:active {
+            background-color: #7a7a7a;
+        }
+
+        #home #menu li.home a,
+        #produtos #menu li.produtos a,
+        #carrinhohome #menu li.carrinho a {
+            color: white;
+            background: purple;
+            border-radius: 1.2em;
+        }
+
+    </style>
+</head>
+<body id="home">
+    <h1>Menu Navegação</h1>
+
+    <div id="menu">
+        <ul>
+            <li class="home"><a href="">Home</a></li>
+            <li class="produtos"><a href="">Produtos</a></li>
+            <li class="carrinho"><a href="">Carrinho</a></li>
+            <li class="contato"><a href="">Contato</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Conteúdo</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias veritatis optio, ab quia labore illum, rerum esse necessitatibus cupiditate earum voluptas exercitationem deleniti iste nostrum non mollitia, nemo provident distinctio.
+        </p>
+    </div>
+</body>
+</html>

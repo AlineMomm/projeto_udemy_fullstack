@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas Linhas e Gap</title>
+    <style>
+        body {
+            font-size: 1.2rem;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .grid {
+            border: 1px solid red;
+            row-gap: 20px;
+            column-gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: 
+                'cabecalho cabecalho'
+                'navegacao principal'
+                'rodape rodape'
+            ;
+        }
+        @media (max-width: 600px){
+            .grid {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                    'cabecalho'
+                    'navegacao'
+                    'principal'
+                    'rodape'
+                ;
+        }
+        }
+        header, nav, main, footer {
+            border: 1px solid yellow;
+        }
+        header {grid-area: cabecalho;}
+        nav {grid-area: navegacao;}
+        main {grid-area: principal;}
+        footer {grid-area: rodape;}
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <header>Cabeçalho</header>
+        <nav>home | produtos | login | cadastros</nav>
+        <main>
+            <h2>Conteúdo do sistema</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, eligendi. Delectus deserunt quaerat quisquam ab praesentium aliquid rerum debitis,
+            </p>
+        </main>
+        <footer>
+            Rodapé
+        </footer>
+    </div>
+</body>
+</html>

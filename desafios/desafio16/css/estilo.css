@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+#topo {
+    background-color: #c5e3fe;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+#imagem-logo {
+    width: 200px;
+    float: left;
+}
+#topo #navegacao ul {
+    list-style-type: none;
+    float: right;
+    padding-right: 5em;
+}
+#topo #navegacao ul li {
+    display: inline;
+    padding: 1.5em 2em;
+}
+#topo #navegacao ul li a {
+    display: block;
+    padding: 0.5em 1.5em;
+    color: black;
+    text-decoration: none;
+    float: right;
+}
+#topo #navegacao ul li a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 1.2em;
+}
+#topo #navegacao::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#conteudo {
+    background-color: #c5e3fe;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 100px;
+}
+#sobre {
+    padding-left: 5em;
+    float: left;
+    width: 40%;
+}
+#sobre h1{
+    font-size: 70px;
+    margin-bottom: 0;
+}
+#sobre p {
+    margin-top: 0;
+    font-size: 20px;
+}
+#imagem-decoracao {
+    float: right;
+    padding-top: 3em;
+    padding-right: 5em;
+    height: 400px;
+}
+#comece {
+    background-color: white;
+    border: 1px solid black;
+    width: 9em;
+    text-align: center;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+}
+#conteudo::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#tendencias {
+    border-bottom: 1px solid black;
+    padding: 2em 5em 2em 5em;
+}
+#tendencias::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#imagem-tendencia {
+    width: 20px;
+    padding-top: 1em;
+}
+#titulo-tendencias {
+    padding-left: 1em;
+}
+#titulo-tendencias span {
+    position: relative;
+    bottom: 3px;
+    font-weight: bold;
+}
+.caixa-tendencia {
+    margin-top: 1.5em;
+    width: 300px;
+    float: left;
+    padding: 1em;
+}
+.caixa-tendencia::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.numero-tendencia {
+    font-size: 40px;
+    font-weight: bold;
+    color: gray;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+.usuario-tendencia {
+    float: right;
+    width: 250px;
+}
+.usuario-tendencia p {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+.usuario-tendencia span {
+    font-weight: normal;
+}
+#rodape {
+    font-weight: bold;
+    padding: 2em;
+    background-color: #c5e3fe;
+}

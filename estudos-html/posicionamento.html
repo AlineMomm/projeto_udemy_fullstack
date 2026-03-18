@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        body {
+            background-color: lightblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        #principal {
+            width: 700px;
+            background-color: white;
+            margin: 1em auto;
+            padding: 0.8em;
+            position: relative;
+        }
+        #menu {
+            background-color: #0497f3;
+            padding: 1em;
+        }
+        a {
+            padding: 0.5em;
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            background-color: white;
+            color: #0497f3;
+        }
+        .novo {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+        .chat {
+            background-color: violet;
+            width: 150px;
+            height: 200px;
+            padding: 0.5em;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <img class="novo"  src="arquivos/imagens/novo.PNG" alt="novo" width="100">
+        <div id="menu">
+            <img src="../estudos-css/img/img/logo-magalu.png" alt="Logo" width="100">
+            <a href="">Home</a>
+            <a href="">Sobre</a>
+            <a href="">Produtos</a>
+            <a href="">Meus pedidos</a>
+            <a href="">Contato</a>
+        </div>
+        <h1>Título do Site</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quos, eligendi voluptatem eius quasi minima illum quaerat soluta minus, consequatur iure! Assumenda voluptatem, nemo voluptate qui aliquid harum fugit ut!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos sint fuga voluptate, totam doloremque earum, reprehenderit architecto, beatae molestiae eveniet est incidunt itaque aspernatur optio temporibus inventore corrupti debitis?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iure ratione ipsum quis error reprehenderit sapiente non est asperiores odit corporis eligendi molestias, pariatur, earum quam. Praesentium suscipit error at!
+        </p>
+        <h1>Título do Site</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores libero atque aspernatur perferendis placeat maxime rerum repellendus, dolorum exercitationem ipsam, nostrum sunt quam ab iusto vero debitis, veniam non?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur eveniet repellat excepturi dolorum quia quis. Laborum, numquam est doloribus expedita doloremque consequatur consectetur placeat voluptatibus voluptates? Eaque eum repellat animi?
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit necessitatibus incidunt quibusdam voluptate, atque ex voluptates beatae inventore at dolor quasi cumque. Qui dolorem iusto nisi nam ipsa, id odit?
+        </p>
+    </div>
+    <div class="chat">
+        <h3>Chat</h3>
+        <textarea name="" id="" cols="15" rows="5"></textarea>
+        <button>Enviar Chat</button>
+    </div>
+</body>
+</html>
