@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nome {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+hr {
+    color: lightgray;
+}
+button {
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#botao-pesquisar-nome {
+    background-color: rgb(92, 92, 253);
+    color: white;
+}
+#botao-pesquisar-nome:hover {
+    background-color: rgb(92, 92, 253, 0.8);
+}
+#botao-carregar {
+    background-color: rgb(255, 184, 52);
+}
+#botao-carregar:hover {
+    background-color: rgb(255, 184, 52, 0.8);
+}
+#lista-nomes {
+    padding: 0;
+}
+#lista-nomes>li {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    list-style-type: none;
+}
