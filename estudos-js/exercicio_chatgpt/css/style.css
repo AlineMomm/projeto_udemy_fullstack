@@ -1,0 +1,222 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#imagem-logo {
+    width: 200px;
+    height: auto;
+}
+nav {
+    background-color: wheat;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    border-bottom: 2px solid brown;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: brown;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: darkred;
+}
+
+nav span {
+    margin-left: auto;
+    color: brown;
+    font-size: 17px;
+    font-style: italic;
+    padding-right: 40px;
+}
+
+#sobre {
+    flex: 1;
+    width: 100%;
+    background-color: #f5f0e6;
+    color: darkred;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#sobre h1 {
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+#contato {
+    flex: 1;
+    width: 100%;
+    background-color: #f5f0e6;
+    color: darkred;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#entre-em-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-contato button {
+    width: 100px;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#form-contato button:hover {
+    background-color: darkred;
+}
+
+#cardapio {
+    flex: 1;
+    width: 100%;
+    background-color: #f5f0e6;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#banner {
+    background-color: rgb(155, 61, 61);
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+#banner h1 {
+    color: wheat;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    color: wheat;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#banner button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(250, 228, 228);
+    color: rgb(116, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#secoes {
+    padding: 40px;
+}
+
+#secoes-cafe {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#secoes-cafe h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#cards-cafes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card-cafe {
+    background-color: rgb(184, 154, 98);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.imagem-cafe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#secao-bebidas-geladas {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#secao-bebidas-geladas h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#cards-bebidas-geladas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card-bebida-gelada {
+    background-color: brown;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.imagem-bebida-gelada {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#secao-sobremesas {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#secao-sobremesas h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+
+footer {
+    background-color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid brown;
+    color: darkred;
+}
+

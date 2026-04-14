@@ -1,0 +1,34 @@
+
+    Exercício gerado pelo ChatGPT:
+        Projeto: Mini sistema de cafeteria — “Montar Pedido”
+        A ideia é fazer um projeto com 2 páginas e um JavaScript simples, sem depender de DOM avançado.
+
+        Página 1 — Cardápio
+        Crie uma tela com:
+            - cabeçalho com nome da cafeteria
+            - banner principal
+            - seção “bebidas”
+            - seção “acompanhamentos”
+            - cards de produtos com:
+                - nome
+                - descrição curta
+                - preço
+                - selo tipo “mais pedido” ou “novo”
+            - botão “Montar pedido”
+        Página 2 — Montagem do pedido
+        Crie uma tela com:
+            - campos para nome do cliente
+            - seleção de 1 bebida
+            - seleção de 1 acompanhamento
+            - checkbox de entrega
+            - campo de cupom
+            - botão “Calcular pedido”
+            - área de resultado
+
+        Exemplo de regras:
+            - café: R$ 8,00
+            - cappuccino: R$ 12,00
+            - croissant: R$ 14,00
+            - cookie: R$ 6,00
+            - entrega: + R$ 5,00
+            - cupom CAFE10: 10% de desconto
