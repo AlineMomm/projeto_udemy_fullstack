@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazer Pedido</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="cabecalho">
+        <nav>
+            <img id="imagem-logo" src="imagens/logo-NALA.png" alt="Logo da NALA">
+            <ul>
+                <li><a href="index.html">Cardápio</a></li>
+                <li><a href="pedido.html">Fazer pedido</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <span>Cafeteria NALA, fazendo seu dia mais doce!</span>
+        </nav>
+    </div>
+    <main id="pedido">
+        <section id="fazer-pedido">
+            <h1>Faça seu Pedido</h1>
+            <form id="form-pedido">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="bebida">Escolher bebida:</label>
+                <select name="bebida" id="bebida">
+                    <option value="expresso">Expresso</option>
+                    <option value="americano">Americano</option>
+                    <option value="capuccino">Cappuccino</option>
+                    <option value="latte">Latte</option>
+                    <option value="iced-coffee">Iced Coffee</option>
+                    <option value="iced-latte">Iced Latte</option>
+                    <option value="frapuccino">Frapuccino</option>
+                    <option value="chocolate-gelado">Chocolate Gelado</option>
+                </select>
+
+                <label for="acompanhamento">Escolher acompanhamento:</label>
+                <select name="acompanhamento" id="acompanhamento">
+                    <option value="brownie">Brownie de Chocolate</option>
+                    <option value="cheesecake">Cheesecake</option>
+                    <option value="torta-limao">Torta de Limão</option>
+                    <option value="cookie">Cookie Recheado</option>
+                </select>
+                <div id="radio-tipo-entrega">
+                    <input type="radio" name="tipo" value="entrega" id="entrega">
+                    <label for="entrega">Entrega</label>
+
+                    <input type="radio" name="tipo" value="retirada" id="retirada">
+                    <label for="retirada">Retirada</label>
+                </div>
+                    <div id="campo-endereco">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco">
+
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero">
+
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+        <section id="resumo-pedido">
+            <h2>Resumo do Pedido</h2>
+            <div id="resumo">
+                <p><strong>Nome:</strong> <span id="resumo-nome"></span></p>
+                <p><strong>Bebida:</strong> <span id="resumo-bebida"></span></p>
+                <p><strong>Acompanhamento:</strong> <span id="resumo-acompanhamento"></span></p>
+                <p><strong>Tipo de Entrega:</strong> <span id="resumo-tipo"></span></p>
+                <p><strong>Endereço:</strong> <span id="resumo-endereco"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Cafeteria NALA. Todos os direitos reservados.</p>
+        <p>Endereço: Rua do Café, 123 - Centro, Cidade - Estado</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

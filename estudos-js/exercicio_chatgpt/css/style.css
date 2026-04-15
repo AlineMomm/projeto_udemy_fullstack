@@ -210,7 +210,84 @@ nav span {
     margin-bottom: 20px;
 }
 
+#cards-sobremesas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
 
+.card-sobremesa {
+    background-color: rgb(196, 120, 120);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.imagem-sobremesa {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#banner button a,
+#banner button a:visited,
+#banner button a:active {
+    text-decoration: none;
+    color: rgb(116, 0, 0);
+}
+
+#banner button a:hover {
+    color: darkred;
+}
+
+#pedido {
+    flex: 1;
+    width: 100%;
+    background-color: #f5f0e6;
+    color: darkred;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#form-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#radio-tipo-entrega {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#form-pedido select, #nome {
+    padding: 5px;
+    border: 1px solid #bbaaaa;
+    border-radius: 5px;
+}
+
+#form-pedido button {
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#campo-endereco {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid brown;
+    border-radius: 10px;
+    background-color: #fff8ef;
+}
 
 footer {
     background-color: wheat;
