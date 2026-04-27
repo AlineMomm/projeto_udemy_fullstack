@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Atributos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img id="imagem" src="img/celular.png" alt="celular" width="500">
+    <br>
+    <a href="httpx://www.google.com" id="link">Clique aqui</a>
+
+    <br>
+    <button id="botao" onclick="alterar()">Clique Aqui</button>
+
+    <script type="text/javascript">
+
+        // let atributo = 'src'
+        // console.log(img.getAttribute(atributo)) // img/celular.png
+        //console.log(img['src']) // http://localhost:3000/img/celular.png
+        //console.log(img.src) // http://localhost:3000/img/celular.png  
+        
+        //DESAFIO: alterar a imagem via Javascript clicando no botão
+        
+        function alterar() {
+            const img = document.querySelector('#imagem')
+            img.src = 'img/celular2.avif'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <span id="itens" quantidade="2" data-status="pendente">
+        2 itens do carrinho
+    </span>
+
+    <ul id="lista">
+        <li codigo="001">Alan</li>
+        <li codigo="002" >João</li>
+    </ul>
+
+    <script type="text/javascript">
+
+        const obj = document.getElementById('itens')
+        //console.log(obj.id) // itens
+        //obj.setAttribute('quantidade','10')
+        //console.log(obj.getAttribute('quantidade'))
+        // obj.dataset.status = "finalizado"
+        // console.log(obj.dataset.status) // finalizado
+        //console.log(obj.getAttribute('data-status')) // finalizado 
+        //console.log(obj.hasAttribute('quantidade')) // true
+        //obj.removeAttribute('data-status')
+        // console.log(onbj.attributes) // NamedNodeMap {0: id, 1: quantidade, length: 2}
+        // console.log(onbj.attributes.quantidade) // id="itens"
+
+
+
+    </script>
+</body>
+</html>

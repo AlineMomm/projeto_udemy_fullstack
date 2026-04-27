@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando Classes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <span class="vermelho texto">Alan Momm</span>
+
+    <button onclick="executar()">Clique Aqui</button>
+
+    <script type="text/javascript">
+
+        function executar() {
+            const obj = document.querySelector('span')
+            const classes = obj.classList
+
+            //console.log(classes) // HTMLCollection(2) ['vermelho', 'texto']
+            //console.log(classes.length) // 2
+            //console.log(classes.contains('vermelho')) // true
+            //classes.add('vermelho', 'texto') // adiciona as classes vermelho e texto
+            //classes.remove('vermelho') // remove a classe vermelho
+            //classes.toggle('vermelho') // se a classe existir, remove. Se não existir, adiciona
+            //obj.className = 'vermelho texto' // substitui o class
+
+            //classes.forEach(item =>console.log(item)) // percorre as classes e exibe cada uma
+        }
+
+        
+
+    </script>
+</body>
+</html>

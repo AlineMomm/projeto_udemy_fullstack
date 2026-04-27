@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegando Elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>Irmão Anterior</div>
+    <div id="itens">
+        <p>Primeiro Elemento</p>
+        <p>Segundo elemento</p>
+        <p>Terceiro elemento</p>
+        <p>Quarto elemento</p>
+    </div>
+    <div>Próximo irmão</div>
+
+    <script type="text/javascript">
+        const lista = document.querySelector('div#itens')
+        console.log(lista.parentNode) // <body>...</body>
+        //text=espaço em branco
+        console.log(lista.childNodes) // NodeList(9) [text, p, text, p, text, p, text, p, text] 
+        console.log(lista.firstChild) // #text
+        console.log(lista.lastChild) // #text
+        console.log(lista.nextSibling) // <div>Próximo irmão</div>
+        console.log(lista.previousSibling) // <div>Irmão Anterior</div>
+
+        // NÃO CONTA ESPAÇAMENTO
+        console.log(lista.children) // HTMLCollection(4) [p, p, p, p] 
+        console.log(lista.firstElementChild) // <p>Primeiro Elemento</p>
+        console.log(lista.lastElementChild) // <p>Quarto elemento</p>
+        console.log(lista.nextElementSibling) // <div>Próximo irmão</div>
+        console.log(lista.previousElementSibling) // <div>Irmão Anterior</div>
+    </script>
+</body>
+</html>

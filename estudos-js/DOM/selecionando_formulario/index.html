@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name="cadastro">
+        <input type="text" name="nome" id="nome">
+        <input type="email" name="email" id="email">
+        <select name="sexo" id ="sexo">
+            <option value="">--</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+    </form>
+
+    <br>
+    <button onclick="preencher()">Selecionar</button>
+
+    <script type="text/javascript">
+        const obj = document.getElementsByName('cadastro')
+        //console.log(obj[0]) // <form name="cadastro">...</form>
+        //console.log(document.forms) // HTMLCollection [form]
+        //console.log(document.forms[0]) // <form name="cadastro">...</form>
+        //console.log(document.cadastro) // <form name="cadastro">...</form>
+        //console.log(document.cadastro.nome) // <input type="text" name="nome">
+        
+        //document.cadastro.nome.value = "Alan"
+
+        //DESAFIO: quando apertar o botão, adicionar valores aos campos do formulário
+        function preencher() {
+            /*
+            document.cadastro.nome.value = "Alan"
+            document.cadastro.email.value = "alan@gmail.com"
+            document.cadastro.sexo.value = "masculino"
+            */
+           /*
+           let nome = document.cadastro.nome.value
+           let email = document.cadastro.email.value
+           let sexo = document.cadastro.sexo.value
+           console.log(nome, email, sexo)
+           */
+          const nome = document.getElementById('nome')
+          console.log(nome.value) // Alan
+          const email = document.getElementById('email')
+          console.log(email.value) // alan@gmail.com
+          const sexo = document.getElementById('sexo')
+          console.log(sexo.value) // masculino
+
+        }
+
+
+    </script>
+</body>
+</html>

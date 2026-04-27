@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando e removendo elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="conteudo">Conteúdo</div>
+
+    <ul id="itens">
+        <li>Alan</li>
+        <li>João</li>
+    </ul>
+
+    <hr>
+    <p id="item-clonar">Tamies</p>
+
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="remover()">Remover</button>
+
+    <script type="text/javascript">
+
+        //const obj = document.getElementById('conteudo');
+        //obj.textContent = 'Novo conteudo'; //adiciona texto
+        //obj.innerHTML = '<p>Novo conteudo</p>'; //permite adicionar tags
+
+        const ul = document.getElementById('itens')
+        const li = document.createElement('li'); //cria um elemento
+        li.setAttribute('teste','10'); //adiciona um atributo ao elemento
+        //li.textContent = 'Maria'; //adiciona texto ao elemento
+
+        //const ulFilha = document.createElement('ul')
+        //const liFilha = document.createElement('li')
+        //liFilha.textContent = 'Fulano';
+        //ulFilha.appendChild(liFilha)
+
+        //li.appendChild(ulFilha)
+        
+        const texto = document.createTextNode('Maria');
+
+        function adicionar() {
+            
+            li.appendChild(texto);
+            //ul.appendChild(li)
+            ul.insertBefore(li,ul.children[0]) //insere o elemento antes do elemento filho especificado
+
+            const itemClonar = document.getElementById('item-clonar');
+            const item = itemClonar.cloneNode(true); //clona o elemento, true para clonar os filhos
+            ul.appendChild(item)
+        }
+
+        function remover() {
+            ul.removeChild(li) //remove o elemento filho
+        }
+    </script>
+</body>
+</html>

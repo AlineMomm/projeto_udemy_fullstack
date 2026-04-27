@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="destaque">Área de conteúdo</div>
+    <h1 class="vermelho">Título do site</h1>
+    <p>Subtítulo</p>
+
+    <ul>
+        <li class="primeiro">Item 1 Alterado</li>
+        <li>Item 2</li>
+    </ul>
+
+    <ul>
+        <li class="primeiro">Item 1 Alterado</li>
+        <li>Item 2</li>
+    </ul>
+
+    <input type="text" name="nome">
+
+    <!-- Desafio: aperta no botão e troca de "item 1" para "teste" -->
+
+    <br><br>
+    <button onclick="trocarTexto()">Clique aqui</button>
+
+    <script>
+        
+        //const obj = document.getElementById('destaque')
+        //console.log(obj) // <div id="destaque">Área de conteúdo</div>
+        //console.log(obj.textContent) // Área de conteúdo
+
+        //const obj = document.querySelector('li.primeiro') // usa seletor css
+        //console.log(obj) // <li class="primeiro">Item 1</li>
+        //console.log(obj.textContent) // Item 1
+
+        // Resolução do desafio
+        function trocarTexto() {
+            const obj = document.querySelector('li.primeiro')
+            obj.innerHTML = 'Teste'
+            obj.classList.add("destaque")
+        }
+
+        //const colecao = document.getElementsByTagName('li')
+
+            //console.log(colecao) // HTMLCollection(2) [li.primeiro, li]
+            /*
+            for(let i = 0; i < colecao.length; i++) {
+                console.log(colecao[i])
+            }
+            */
+
+             /* 
+            const lista = Array.from(colecao)
+            const funcao = function (item,i) {
+             console.log(item.textContent)
+            }
+            lista.forEach(funcao)
+             */
+        
+        //const obj = document.getElementsByClassName('vermelho')
+            //console.log(obj) // HTMLCollection(1) [h1.vermelho]
+        //const obj = document.getElementsByName('nome')
+            //console.log(obj) // NodeList [input]
+            //console.log(obj[0]) // <input type="text" name="nome">
+        //const obj = document.querySelector('li.primeiro')
+            //console.log(obj) // <li class="primeiro">Item 1</li>
+        //const obj = document.querySelectorAll('li.primeiro')
+            //console.log(obj) // NodeList(2) [li.primeiro, li.primeiro]
+            //console.log(obj[0]) // <li class="primeiro">Item 1</li>
+            //console.log(obj.item(0)) // <li class="primeiro">Item 1</li>  
+
+        
+    </script>
+</body>
+</html>
