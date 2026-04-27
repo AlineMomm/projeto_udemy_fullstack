@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    💡 Ideia do exercício (realista)
+    “Mostrar informações do produto ao passar o mouse”
+
+    Quando o usuário:
+
+    passa o mouse em cima de um café
+    👉 aparece uma descrição abaixo
+
+    Quando tira o mouse
+    👉 a descrição some
+
+    🎯 O que você vai treinar
+    mouseover
+    mouseout
+    event.target
+    manipulação de texto
+    comportamento dinâmico de interface
+    
+    👉 Isso é MUITO usado em:
+    
+    e-commerce
+    cardápios
+    dashboards
+    -->
+
+    <h1>Passe o mouse sobre o café</h1>
+
+    <div class="container">
+        <div class="card" data-info="Café forte e intenso">
+            Expresso
+        </div>
+
+        <div class="card" data-info="Café suave com mais água">
+            Americano
+        </div>
+
+        <div class="card" data-info="Café com leite e espuma cremosa">
+            Cappuccino
+        </div>
+
+        <div class="card" data-info="Café leve com bastante leite">
+            Latte
+        </div>
+    </div>
+
+    <h2 id="info">Passe o mouse para ver detalhes</h2>
+
+    <script src="script.js"></script>
+</body>
+</html>

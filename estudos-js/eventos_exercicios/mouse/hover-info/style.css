@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f5f0e6;
+    color: brown;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.card {
+    padding: 20px 30px;
+    background-color: wheat;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background-color: #e6c9a8;
+}
