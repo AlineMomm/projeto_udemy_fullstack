@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido com Observação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    
+    💡 O que acontece agora
+
+    Enquanto digita:
+
+    mostra contador
+    bloqueia botão se passar do limite
+
+    Ao enviar:
+
+    valida de novo (segurança)
+    mostra resultado só se estiver válido
+    
+    -->
+    
+    <main class="container">
+        <h1>Observação do pedido ☕</h1>
+
+        <form id="formulario">
+            <textarea 
+                id="observacao" 
+                placeholder="Ex: sem açúcar..."
+            ></textarea>
+
+            <p id="contador">0/100 caracteres</p>
+            <p id="mensagem"></p>
+
+            <button id="botao" type="submit">Enviar pedido</button>
+        </form>
+
+        <h2 id="resultado"></h2>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

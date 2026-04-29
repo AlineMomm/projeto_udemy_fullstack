@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f5f0e6;
+    color: brown;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input, select {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid brown;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

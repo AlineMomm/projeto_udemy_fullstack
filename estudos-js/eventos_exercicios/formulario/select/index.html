@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Evento Select</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+
+    “Selecionar texto de uma observação e mostrar o trecho selecionado”
+
+    Isso é usado em:
+
+    editores de texto
+    campos de comentário
+    sistemas de revisão
+    formulários com observações
+    
+    -->
+
+    <main class="container">
+        <h1>Observação do pedido ☕</h1>
+
+        <textarea id="observacao">
+Sem açúcar, com leite separado e entregar no período da manhã.
+        </textarea>
+
+        <div class="painel">
+            <h2>Texto selecionado:</h2>
+            <p id="resultado">Nenhum texto selecionado ainda.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

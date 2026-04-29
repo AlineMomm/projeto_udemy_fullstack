@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    
+    💡 Ideia do exercício (realista)
+    “Simular envio de pedido”
+
+    O usuário:
+
+    preenche nome
+    escolhe bebida
+    clica em “Enviar”
+
+    👉 você:
+
+    impede o envio padrão (não recarrega a página)
+    valida os dados
+    mostra um resumo na tela
+    
+    -->
+
+
+    <h1>Faça seu pedido</h1>
+
+    <form id="formulario">
+        <input type="text" id="nome" placeholder="Seu nome">
+
+        <select id="bebida">
+            <option value="">Escolha a bebida</option>
+            <option value="Expresso">Expresso</option>
+            <option value="Cappuccino">Cappuccino</option>
+        </select>
+
+        <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <h2 id="resultado"></h2>
+
+    <script src="script.js"></script>
+</body>
+</html>

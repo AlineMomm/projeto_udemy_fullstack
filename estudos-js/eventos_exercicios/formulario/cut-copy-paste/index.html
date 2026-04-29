@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cut Copy Paste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--
+    
+    💡 Ideia do exercício
+    “Campo de observação com histórico de ações”
+    
+    Você vai criar um campo onde o sistema mostra quando o usuário:
+    
+    copia texto
+    recorta texto
+    cola texto
+    
+    Isso é usado em:
+    
+    campos de senha
+    formulários sensíveis
+    editores de texto
+    sistemas que precisam controlar ações do usuário
+    
+    -->
+
+    <main class="container">
+        <h1>Observação do pedido ☕</h1>
+
+        <textarea 
+            id="observacao" 
+            placeholder="Digite, copie, recorte ou cole algo aqui..."
+        ></textarea>
+
+        <div class="painel">
+            <h2>Última ação:</h2>
+            <p id="acao">Nenhuma ação ainda</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f5f0e6;
+    color: brown;
+}
+
+select {
+    padding: 10px;
+    margin: 20px;
+    border-radius: 8px;
+    border: 1px solid brown;
+}
+
+h2 {
+    margin-top: 20px;
+}

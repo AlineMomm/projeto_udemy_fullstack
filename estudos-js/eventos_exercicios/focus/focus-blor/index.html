@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!--
+    
+    💡 Ideia do exercício (realista)
+    “Formulário inteligente de pedido”
+    
+    Quando o usuário:
+    
+    entra no campo → destaca o campo (focus)
+    sai do campo → valida e mostra erro (blur)
+    
+    👉 Isso é usado em:
+    
+    login
+    cadastro
+    checkout
+    qualquer formulário moderno
+    
+    -->
+
+    <main class="container">
+        <h1>Pedido</h1>
+
+        <form id="formulario">
+
+            <input type="text" id="nome" placeholder="Seu nome">
+            <p class="erro" id="erro-nome"></p>
+
+            <input type="text" id="email" placeholder="Seu email">
+            <p class="erro" id="erro-email"></p>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f5f0e6;
+    color: brown;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: wheat;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+/* foco */
+.input-focus {
+    border: 2px solid brown;
+}
+
+/* erro */
+.input-erro {
+    border: 2px solid red;
+}
+
+.erro {
+    font-size: 12px;
+    color: red;
+    height: 15px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
