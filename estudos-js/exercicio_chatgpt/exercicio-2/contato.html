@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="imagem-logo" src="img/logo-petshop-luna.png" alt="Logo da Petshop Luna">
+        </div>
+        <div id="navecacao">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contato">
+        
+        <form id="formulario-contato">
+            <h1>Entre em contato</h1>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+
+            <label for="email">e-mail:</label>
+            <input type="text" name="email" id="email">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="observacoes" name="observacoes" rows="7"></textarea>
+            <p id="contador-contato">0/200 caracteres</p>
+
+            <button>Enviar</button>
+
+            <p id="mensagem-sucesso"></p>
+        </form>
+        
+        <img id="imagem-cachorro-contato" src="img/cachorro-contato.png" alt="Cachorro fofo">
+    </main>
+    <footer>
+        <p>© 2026 Petshop Luna. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

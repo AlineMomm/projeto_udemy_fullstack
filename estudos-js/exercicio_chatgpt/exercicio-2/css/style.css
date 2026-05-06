@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(213, 243, 233);
+}
+
+#imagem-logo {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(119, 48, 48);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(65, 19, 19);
+}
+
+/* main */
+
+main {
+    padding: 20px;
+}
+
+/* banner */
+
+#banner {
+    display: flex;
+    justify-content: center; /* centraliza o conjunto */
+    align-items: center;
+    gap: 40px; /* espaço entre texto e imagem */
+        
+}
+#agendar-banner {
+    width: 400px;
+    text-align: right;
+}
+
+#imagem-banner {
+    width: 400px;
+    height: auto;
+}
+
+#botao-agendar {
+    padding: 10px 20px;
+    background-color: rgb(15, 133, 93);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#botao-agendar:hover {
+    background-color: rgb(10, 90, 63);
+}
+
+#botao-agendar a {
+    color: white;
+    text-decoration: none;
+}
+
+#agendar-banner h1 {
+    margin-bottom: 20px;
+    font-family: "Playwrite NO", cursive;
+    color: rgb(119, 48, 48);
+}
+
+/* destaque */
+#cards-destaque {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.card-destaque {
+    width: 30%;
+    height: 290px;
+    padding: 30px;
+    background-color: rgb(92, 57, 57);
+    border-radius: 10px;
+    text-align: center;
+    color: wheat;
+}
+
+.card-destaque:hover {
+    background-color: rgb(73, 42, 42);
+    transform: scale(1.05);
+}
+
+.imagem-destaque {
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+#destaques h2 {
+    margin-top: 20px;
+    font-family: "Playwrite NO", cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    display: none;
+}
+
+footer {
+    background-color: rgb(213, 243, 233);
+    text-align: center;
+    padding: 10px;
+    color: rgb(119, 48, 48);
+}
+
+/* loading */
+
+#loading {
+    height: 100vh;
+    background-color: rgb(213, 243, 233);
+    color: rgb(119, 48, 48);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo {
+    display: none;
+}
+
+/*serviços*/
+#servicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.card-servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 390px;
+    padding: 30px;
+    background-color: rgb(92, 57, 57);
+    border-radius: 10px;
+    text-align: center;
+    color: wheat;
+}
+
+.imagem-servico {
+    width: 250px;
+    height: 160px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.card-servico button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: rgb(15, 133, 93);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-servico button:hover {
+    transform: scale(1.05);
+}
+
+.card-servico span {
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+}
+.imagem-separador {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+.imagem-centro {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-selecionado {
+    border: 3px solid rgb(15, 133, 93);
+    transform: scale(1.03);
+}
+
+/*Agendamento*/
+#agendamento {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    gap: 100px;
+    margin-bottom: 320px;
+}
+
+#formulario {
+    background-color: rgb(92, 57, 57);
+    color: wheat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    height: 840px;
+}
+
+#formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#formulario form input,select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario form input,
+#formulario form select,
+#formulario form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.grupo-servico {
+    width: 100%;
+}
+
+#formulario form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(33, 165, 121);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario form button:hover {
+    background-color: rgb(31, 119, 90);
+}
+
+#formulario div h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#formulario div label {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.grupo-radio {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#resumo {
+    background-color: rgb(92, 57, 57);
+    color: wheat;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    height: 840px;
+}
+
+#resumo h1 {
+    margin-bottom: 15px;
+}
+
+#resumo h2 {
+    font-family: "Playwrite NO", cursive;
+    padding-left: 20px;
+}
+
+#resumo p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.campo-focus {
+    background-color: rgb(212, 199, 199);
+}
+
+#contador {
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+/*contato*/
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 100vh;
+}
+
+#formulario-contato {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(92, 57, 57);
+    border-radius: 10px;
+    width: 800px;
+    color: wheat;
+    padding: 30px;
+    height: 500px;
+}
+
+#formulario-contato textarea {
+    width: 600px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#formulario-contato label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#formulario-contato input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#formulario-contato button {
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(33, 165, 121);
+    color: white;
+    cursor: pointer;
+}
+
+#formulario-contato button:hover {
+    background-color: rgb(31, 119, 90);
+}
+
+#contato h1 {
+    margin-bottom: 10px;
+}
+
+
+#imagem-cachorro-contato {
+    width: 250px;
+}

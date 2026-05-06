@@ -1,0 +1,251 @@
+Estrutura de arquivos:
+projeto_final_petshop/
+  index.html
+  servicos.html
+  agendamento.html
+  contato.html
+  css/
+    style.css
+  js/
+    script.js
+  imagens/
+
+
+Página 1 — index.html
+
+Página inicial
+
+Ela terá:
+
+Header
+- logo “Petshop Luna”
+- menu:
+    Início
+    Serviços
+    Agendamento
+    Contato
+
+Banner
+- título: “Cuidado, carinho e diversão para o seu pet”
+- botão “Agendar horário”
+
+Seção de destaques
+- Cards com:
+    Banho
+    Tosa
+    Consulta básica
+    Loja pet
+
+Eventos usados aqui
+load
+Quando a página carregar:
+- aparece uma mensagem rápida:
+    “Carregando Petshop Luna...”
+- depois mostra o conteúdo.
+
+mouseover e mouseout
+Quando passar o mouse nos cards:
+- muda a cor do card
+- mostra uma descrição curta embaixo.
+Exemplo:
+    “Banho completo com produtos especiais para pets sensíveis.”
+
+Página 2 — servicos.html
+Catálogo de serviços
+
+Ela terá uma lista de serviços em cards:
+- Banho simples — R$ 40
+- Banho premium — R$ 60
+- Tosa higiênica — R$ 35
+- Tosa completa — R$ 70
+- Consulta básica — R$ 20
+- Consulta avançada — R$ 45
+
+Cada card terá:
+- nome
+- descrição
+- preço oculto inicialmente
+- botão “Selecionar”
+
+Eventos usados aqui
+
+mouseover
+Quando passar o mouse no card:
+- mostrar o preço.
+    Exemplo:
+        Preço: R$ 60,00
+
+mouseout
+Quando tirar o mouse:
+- esconder o preço novamente.
+
+click
+Quando clicar em “Selecionar”:
+- o card fica marcado com borda destacada
+aparece:
+    Serviço selecionado: Banho premium
+
+dblclick
+Quando der dois cliques no card:
+- remove a seleção.
+
+Página 3 — agendamento.html
+Formulário de agendamento
+
+Essa será a página principal do JavaScript.
+
+Ela terá:
+
+Formulário
+
+- nome do tutor
+- nome do pet
+- tipo do pet:
+    cachorro
+    gato
+    outro
+- serviço desejado
+- porte do pet:
+    pequeno
+    médio
+    grande
+- observações
+- botão “Agendar”
+
+Resumo ao lado
+- tutor
+- pet
+- tipo
+- serviço
+- porte
+- observações
+- preço estimado
+
+Eventos usados aqui
+
+focus
+Quando entrar em um campo:
+- destacar borda do campo.
+
+blur
+Quando sair do campo:
+- validar se está vazio.
+- se estiver vazio, mostrar erro.
+
+input
+No campo de observações:
+- contador de caracteres.
+- exemplo:
+    38/120 caracteres
+
+change
+Quando mudar o serviço ou porte:
+- atualizar o preço estimado.
+
+Exemplo de regra:
+- banho simples: R$ 40
+- banho premium: R$ 60
+- tosa completa: R$ 70
+- pet grande: + R$ 20
+- pet médio: + R$ 10
+- pet pequeno: + R$ 0
+
+submit
+Quando enviar:
+- impedir recarregar a página com preventDefault()
+- validar os campos
+- mostrar o resumo final do agendamento.
+
+keydown
+No campo “nome do pet”:
+- se apertar Enter, pular para o próximo campo.
+
+Página 4 — contato.html
+Contato e mensagem
+
+la terá:
+
+Formulário de contato
+- nome
+- e-mail
+- mensagem
+
+Caixa de mensagem
+- contador de caracteres
+- aviso ao copiar/colar/recortar
+
+Informações
+- endereço fictício
+- telefone
+- horário de funcionamento
+
+Eventos usados aqui
+
+input
+    Contar caracteres da mensagem.
+
+copy
+Quando copiar texto da mensagem:
+    Você copiou um trecho da mensagem.
+
+cut
+Quando recortar:
+    Você recortou um trecho da mensagem.
+
+paste
+Quando colar:
+    Você colou um texto na mensagem.
+
+select
+Quando selecionar texto dentro da mensagem:
+mostrar:
+    Texto selecionado: “...”
+
+submit
+Validar e mostrar:
+    Mensagem enviada com sucesso!
+
+
+O que esse projeto treina
+HTML:
+- páginas
+- links
+- formulários
+- inputs
+- selects
+- textarea
+- cards
+- estrutura semântica
+
+CSS:
+- flexbox
+- grid
+- hover
+- focus
+- classes visuais
+- responsividade básica
+- layout real
+
+JavaScript:
+- getElementById
+- querySelectorAll
+- addEventListener
+- load
+- mouseover
+- mouseout
+- click
+- dblclick
+- keydown
+- input
+- change
+- submit
+- focus
+- blur
+- copy
+- cut
+- paste
+- select
+- classList
+- textContent
+- value
+- preventDefault

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento Petshop Luna</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img id="imagem-logo" src="img/logo-petshop-luna.png" alt="Logo da Petshop Luna">
+        </div>
+        <div id="navecacao">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="agendamento">
+        <div id="formulario">
+            <form>
+                <h1>Agendamento</h1>
+                <label for="nomeDono">Nome do Dono:</label>
+                <input type="text" id="nomeDono" name="nomeDono" required>
+
+                <label for="nomePet">Nome do Pet:</label>
+                <input type="text" id="nomePet" name="nomePet" required>
+
+                <label for="tipo">Tipo do Pet:</label>
+                <select name="tipo" id="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="servicos">Serviços Desejados:</label>
+                <h3>Banho</h3>
+                <div class="grupo-servico">
+                    <select name="banho" id="banho">
+                        <option value="">Selecione</option>
+                        <option value="banho-simples">Banho simples</option>
+                        <option value="banho-premium">Banho premium</option>
+                    </select>
+                </div>
+                <h3>Tosa</h3>
+                <div class="grupo-servico">
+                    <select name="tosa" id="tosa">
+                        <option value="">Selecione</option>
+                        <option value="tosa-higienica">Tosa higiênica</option>
+                        <option value="tosa-completa">Tosa completa</option>
+                    </select>
+                </div>
+                <h3>Consulta</h3>
+                <div class="grupo-servico">
+                    <select name="consulta" id="consulta">
+                        <option value="">Selecione</option>
+                        <option value="consulta-basica">Consulta básica</option>
+                        <option value="consulta-avancada">Consulta avançada</option>
+                    </select>
+                </div>
+                
+                <label>Porte do Pet:</label>
+                <div class="grupo-radio">
+                    <label>
+                        <input type="radio" name="porte" value="pequeno"> Pequeno
+                    </label>
+                
+                    <label>
+                        <input type="radio" name="porte" value="medio"> Médio
+                    </label>
+                
+                    <label>
+                        <input type="radio" name="porte" value="grande"> Grande
+                    </label>
+                </div>
+
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="5"></textarea>
+                <p id="contador">0/50 caracteres</p>
+
+                <button>Agendar</button>
+            </form>
+        </div>
+
+        <div id="resumo">
+            <h1>Resumo do Agendamento</h1>
+            <h2>Tutor:</h2>
+            <p id="resumo-tutor"></p>
+            <h2>Pet:</h2>
+            <p id="resumo-pet"></p>
+            <h2>Serviço:</h2>
+            <p id="resumo-servico"></p>
+            <h2>Porte:</h2>
+            <p id="resumo-porte"></p>
+            <h2>Observações:</h2>
+            <p id="resumo-observacoes"></p>
+            <h2>Preço Estimado:</h2>
+            <p id="resumo-preco">R$ 0,00</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 Petshop Luna. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
