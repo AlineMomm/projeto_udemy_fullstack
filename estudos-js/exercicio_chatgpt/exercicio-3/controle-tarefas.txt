@@ -1,0 +1,744 @@
+EXERCÍCIO DE HTML, CSS E JAVASCRIPT
+
+TEMA DO SITE:
+Controle simples de tarefas da semana
+
+NÍVEL:
+Básico para intermediário
+
+OBJETIVO DO EXERCÍCIO:
+Criar uma página onde o usuário consegue cadastrar tarefas da semana, filtrar tarefas por categoria, marcar tarefas como concluídas e visualizar algumas informações na tela.
+
+A ideia é simular algo usado em empresas: um pequeno painel de controle para organizar atividades, validar campos, atualizar dados na tela e reagir às ações do usuário.
+
+--------------------------------------------------
+
+NOME SUGERIDO DO PROJETO:
+painel-tarefas-semana
+
+ARQUIVOS QUE VOCÊ DEVE CRIAR:
+
+index.html
+style.css
+script.js
+
+--------------------------------------------------
+
+COMO DEVE SER A PÁGINA:
+
+A página deve ter um layout simples, bonito e organizado.
+
+Ela deve conter:
+
+1. CABEÇALHO
+
+Título:
+Painel de Tarefas da Semana
+
+Subtítulo:
+Organize suas tarefas de forma simples e prática.
+
+Também deve aparecer uma mensagem automática quando a página carregar, por exemplo:
+Sistema carregado com sucesso!
+
+--------------------------------------------------
+
+2. ÁREA DE CADASTRO DE TAREFA
+
+Criar um formulário com os seguintes campos:
+
+Campo de texto:
+Nome da tarefa
+
+Campo select:
+Categoria da tarefa
+
+Opções:
+Estudo
+Casa
+Trabalho
+Pessoal
+
+Campo select:
+Prioridade
+
+Opções:
+Baixa
+Média
+Alta
+
+Campo textarea:
+Descrição da tarefa
+
+Botões:
+Cadastrar tarefa
+Limpar formulário
+
+--------------------------------------------------
+
+3. ÁREA DE FILTRO
+
+Criar uma área com filtros:
+
+Campo de busca:
+Pesquisar tarefa pelo nome
+
+Select:
+Filtrar por categoria
+
+Opções:
+Todas
+Estudo
+Casa
+Trabalho
+Pessoal
+
+Checkbox:
+Mostrar somente tarefas pendentes
+
+--------------------------------------------------
+
+4. ÁREA DE LISTAGEM
+
+Criar uma área onde as tarefas cadastradas aparecem em cards.
+
+Cada card de tarefa deve mostrar:
+
+Nome da tarefa
+Categoria
+Prioridade
+Descrição
+Status: Pendente ou Concluída
+
+Cada card deve ter botões:
+
+Concluir
+Excluir
+
+--------------------------------------------------
+
+5. ÁREA DE RESUMO
+
+Criar uma área com números atualizados automaticamente:
+
+Total de tarefas cadastradas
+Total de tarefas pendentes
+Total de tarefas concluídas
+Quantidade de tarefas com prioridade alta
+
+--------------------------------------------------
+
+EVENTOS QUE VOCÊ DEVE USAR
+
+1. EVENTO load
+
+Onde usar:
+Na janela do navegador.
+
+O que deve fazer:
+Quando a página terminar de carregar, mostrar uma mensagem na tela dizendo:
+Sistema carregado com sucesso!
+
+Também pode preencher automaticamente algum texto inicial, como:
+Nenhuma tarefa cadastrada ainda.
+
+Objetivo:
+Treinar ação automática assim que a página abre.
+
+--------------------------------------------------
+
+2. EVENTO submit
+
+Onde usar:
+No formulário de cadastro.
+
+O que deve fazer:
+Quando o usuário clicar em Cadastrar tarefa, o JavaScript deve impedir o recarregamento da página usando preventDefault().
+
+Depois disso, deve validar os campos.
+
+Se o campo Nome da tarefa estiver vazio, mostrar uma mensagem de erro.
+Se a categoria não foi selecionada, mostrar uma mensagem de erro.
+Se a prioridade não foi selecionada, mostrar uma mensagem de erro.
+
+Se estiver tudo certo, a tarefa deve ser adicionada na lista de tarefas.
+
+Objetivo:
+Treinar envio de formulário, validação e manipulação de dados.
+
+--------------------------------------------------
+
+3. EVENTO input
+
+Onde usar:
+No campo Nome da tarefa.
+No campo de pesquisa.
+No campo Descrição da tarefa.
+
+O que deve fazer:
+
+No campo Nome da tarefa:
+Atualizar em tempo real um contador de caracteres.
+
+Exemplo:
+Caracteres digitados: 12
+
+No campo de pesquisa:
+Filtrar as tarefas enquanto o usuário digita.
+
+Exemplo:
+Se digitar "comprar", devem aparecer apenas tarefas que possuem essa palavra no nome.
+
+No campo Descrição:
+Mostrar quantos caracteres ainda faltam para chegar ao limite máximo.
+
+Objetivo:
+Treinar atualização automática da tela conforme o usuário digita.
+
+--------------------------------------------------
+
+4. EVENTO change
+
+Onde usar:
+No select de categoria.
+No select de prioridade.
+No select de filtro por categoria.
+No checkbox de mostrar somente pendentes.
+
+O que deve fazer:
+
+Quando o usuário mudar a categoria no cadastro:
+Mostrar uma mensagem, por exemplo:
+Categoria selecionada: Estudo
+
+Quando mudar a prioridade:
+Se escolher Alta, destacar visualmente o campo ou mostrar aviso:
+Atenção: tarefa de alta prioridade.
+
+Quando mudar o filtro por categoria:
+Atualizar a lista e mostrar apenas as tarefas daquela categoria.
+
+Quando marcar o checkbox:
+Mostrar somente tarefas pendentes.
+
+Objetivo:
+Treinar reação a mudanças em campos de formulário.
+
+--------------------------------------------------
+
+5. EVENTO click
+
+Onde usar:
+Nos botões Concluir, Excluir e Limpar formulário.
+
+O que deve fazer:
+
+Botão Concluir:
+Alterar o status da tarefa de Pendente para Concluída.
+
+Botão Excluir:
+Remover a tarefa da lista.
+
+Botão Limpar formulário:
+Limpar os campos e remover mensagens de erro.
+
+Objetivo:
+Treinar ações comuns em sistemas reais.
+
+--------------------------------------------------
+
+6. EVENTO dblclick
+
+Onde usar:
+No card da tarefa.
+
+O que deve fazer:
+Ao clicar duas vezes em um card, alternar o destaque da tarefa.
+
+Exemplo:
+Se der dois cliques, o card fica com uma borda diferente ou fundo destacado.
+Se der dois cliques novamente, remove o destaque.
+
+Objetivo:
+Treinar uma ação extra de interação com elementos da tela.
+
+--------------------------------------------------
+
+7. EVENTO mouseover
+
+Onde usar:
+Nos cards das tarefas.
+
+O que deve fazer:
+Quando o mouse passar por cima de um card, mostrar uma informação extra, por exemplo:
+
+Clique em Concluir para finalizar esta tarefa.
+
+Ou então aumentar levemente o card com CSS.
+
+Objetivo:
+Treinar interação visual com o mouse.
+
+--------------------------------------------------
+
+8. EVENTO mouseout
+
+Onde usar:
+Nos cards das tarefas.
+
+O que deve fazer:
+Quando o mouse sair do card, esconder a informação extra ou voltar o card ao tamanho normal.
+
+Objetivo:
+Treinar entrada e saída do mouse em elementos.
+
+--------------------------------------------------
+
+9. EVENTO focus
+
+Onde usar:
+Nos campos do formulário.
+
+O que deve fazer:
+Quando o usuário clicar dentro de um campo, destacar o campo com borda colorida.
+
+Também pode mostrar uma dica abaixo do campo.
+
+Exemplo:
+Digite um nome claro para a tarefa.
+
+Objetivo:
+Melhorar a experiência do usuário.
+
+--------------------------------------------------
+
+10. EVENTO blur
+
+Onde usar:
+Nos campos obrigatórios do formulário.
+
+O que deve fazer:
+Quando o usuário sair do campo, verificar se ele está vazio.
+
+Se estiver vazio, mostrar uma mensagem:
+Este campo é obrigatório.
+
+Se estiver preenchido, remover a mensagem de erro.
+
+Objetivo:
+Treinar validação campo por campo.
+
+--------------------------------------------------
+
+11. EVENTO keydown
+
+Onde usar:
+No campo de pesquisa.
+
+O que deve fazer:
+Se o usuário pressionar a tecla Escape, limpar a pesquisa.
+
+Exemplo:
+Usuário digitou "estudar".
+Ao apertar Escape, o campo de pesquisa fica vazio e todas as tarefas aparecem novamente.
+
+Objetivo:
+Treinar eventos de teclado usados em sistemas reais.
+
+--------------------------------------------------
+
+12. EVENTO keyup
+
+Onde usar:
+No campo Nome da tarefa.
+
+O que deve fazer:
+Transformar a primeira letra do texto em maiúscula ou apenas atualizar uma prévia do nome digitado.
+
+Exemplo:
+Prévia da tarefa: Estudar JavaScript
+
+Objetivo:
+Treinar leitura do valor digitado após o usuário soltar a tecla.
+
+--------------------------------------------------
+
+13. EVENTO resize
+
+Onde usar:
+Na janela do navegador.
+
+O que deve fazer:
+Quando a tela for redimensionada, mostrar na tela a largura atual da janela.
+
+Exemplo:
+Largura da tela: 1366px
+
+Se a largura for menor que 600px, mostrar:
+Modo celular ativado.
+
+Objetivo:
+Treinar comportamento responsivo com JavaScript.
+
+--------------------------------------------------
+
+14. EVENTO scroll
+
+Onde usar:
+Na janela do navegador.
+
+O que deve fazer:
+Quando o usuário rolar a página para baixo, mostrar um botão Voltar ao topo.
+
+Quando clicar nesse botão, a página deve voltar para o início.
+
+Observação:
+No arquivo de eventos aparece "scrool", mas no JavaScript o nome correto do evento é "scroll".
+
+Objetivo:
+Treinar eventos ligados à rolagem da página.
+
+--------------------------------------------------
+
+15. EVENTOS copy, cut e paste
+
+Onde usar:
+No campo Descrição da tarefa.
+
+O que deve fazer:
+
+copy:
+Quando o usuário copiar o texto, mostrar uma mensagem:
+Texto copiado.
+
+cut:
+Quando o usuário recortar o texto, mostrar:
+Texto recortado.
+
+paste:
+Quando o usuário colar algo, mostrar:
+Texto colado.
+
+Objetivo:
+Treinar eventos de manipulação de texto.
+
+--------------------------------------------------
+
+16. EVENTO select
+
+Onde usar:
+No campo Descrição da tarefa.
+
+O que deve fazer:
+Quando o usuário selecionar parte do texto, mostrar:
+Você selecionou um trecho da descrição.
+
+Objetivo:
+Treinar evento de seleção de texto.
+
+--------------------------------------------------
+
+REGRAS DE JAVASCRIPT QUE VOCÊ DEVE USAR
+
+Você deve usar:
+
+1. querySelector
+2. querySelectorAll
+3. addEventListener
+4. arrays
+5. objetos
+6. funções
+7. if e else
+8. forEach
+9. push
+10. filter
+11. includes
+12. innerHTML ou textContent
+13. classList.add
+14. classList.remove
+15. classList.toggle
+16. preventDefault
+17. template string
+18. validação de formulário
+19. manipulação do DOM
+20. atualização automática de contadores
+
+--------------------------------------------------
+
+ESTRUTURA SUGERIDA DO ARRAY DE TAREFAS
+
+No JavaScript, as tarefas devem ser guardadas em um array.
+
+Cada tarefa deve ser um objeto com esta estrutura:
+
+id
+nome
+categoria
+prioridade
+descricao
+concluida
+
+Exemplo de uma tarefa:
+
+{
+  id: 1,
+  nome: "Estudar eventos JavaScript",
+  categoria: "Estudo",
+  prioridade: "Alta",
+  descricao: "Praticar eventos de formulário, mouse e teclado.",
+  concluida: false
+}
+
+--------------------------------------------------
+
+FUNCIONALIDADES OBRIGATÓRIAS
+
+1. Cadastrar tarefa
+
+O usuário preenche o formulário e clica em Cadastrar tarefa.
+
+O sistema deve:
+Validar os campos
+Criar um objeto com os dados
+Adicionar o objeto no array
+Atualizar a lista na tela
+Atualizar os totais do resumo
+Limpar o formulário
+
+--------------------------------------------------
+
+2. Listar tarefas na tela
+
+Toda tarefa cadastrada deve aparecer em formato de card.
+
+O card deve mudar visualmente conforme a prioridade:
+
+Baixa:
+Visual normal
+
+Média:
+Visual com destaque moderado
+
+Alta:
+Visual com destaque maior
+
+--------------------------------------------------
+
+3. Concluir tarefa
+
+Ao clicar no botão Concluir, a tarefa deve mudar o status para Concluída.
+
+O card pode ficar com aparência diferente, por exemplo:
+Texto riscado
+Fundo mais claro
+Status alterado para Concluída
+
+--------------------------------------------------
+
+4. Excluir tarefa
+
+Ao clicar no botão Excluir, a tarefa deve ser removida do array e da tela.
+
+Antes de excluir, você pode usar confirm:
+
+Tem certeza que deseja excluir esta tarefa?
+
+--------------------------------------------------
+
+5. Pesquisar tarefa
+
+Ao digitar no campo de pesquisa, a lista deve ser filtrada automaticamente.
+
+A pesquisa deve verificar se o nome da tarefa inclui o texto digitado.
+
+--------------------------------------------------
+
+6. Filtrar por categoria
+
+Ao selecionar uma categoria no filtro, mostrar somente as tarefas daquela categoria.
+
+Se escolher Todas, mostrar todas.
+
+--------------------------------------------------
+
+7. Mostrar somente pendentes
+
+Quando o checkbox estiver marcado, mostrar apenas tarefas que ainda não foram concluídas.
+
+--------------------------------------------------
+
+8. Atualizar resumo
+
+Sempre que cadastrar, concluir, excluir ou filtrar tarefas, atualizar os números:
+
+Total de tarefas
+Pendentes
+Concluídas
+Prioridade alta
+
+--------------------------------------------------
+
+9. Validação visual dos campos
+
+Quando o usuário sair de um campo obrigatório vazio, mostrar erro.
+
+Quando preencher corretamente, remover erro.
+
+--------------------------------------------------
+
+10. Botão voltar ao topo
+
+Quando o usuário rolar a página, aparecer o botão Voltar ao topo.
+
+Ao clicar no botão, voltar para o início da página.
+
+--------------------------------------------------
+
+DESAFIO EXTRA OPCIONAL
+
+Se quiser deixar mais parecido com um sistema usado em empresa, faça também:
+
+1. Salvar as tarefas no localStorage
+
+Assim, quando atualizar a página, as tarefas continuam salvas.
+
+2. Criar um botão Editar
+
+Ao clicar em Editar, os dados da tarefa voltam para o formulário.
+
+Depois, o usuário pode alterar e salvar novamente.
+
+3. Criar uma mensagem de feedback
+
+Exemplos:
+Tarefa cadastrada com sucesso.
+Tarefa excluída com sucesso.
+Tarefa concluída com sucesso.
+
+4. Criar filtro combinado
+
+O sistema deve permitir pesquisar pelo nome, filtrar por categoria e mostrar somente pendentes ao mesmo tempo.
+
+--------------------------------------------------
+
+O QUE DEVE TER NO HTML
+
+Use tags como:
+
+header
+main
+section
+form
+input
+select
+textarea
+button
+div
+h1
+h2
+p
+span
+
+O HTML deve estar bem organizado.
+
+Cada área da página deve ficar em uma section.
+
+--------------------------------------------------
+
+O QUE DEVE TER NO CSS
+
+Use CSS para deixar a página agradável.
+
+O CSS deve ter:
+
+Centralização do conteúdo
+Cores simples
+Cards de tarefas
+Botões estilizados
+Inputs organizados
+Layout responsivo
+Classes para prioridade baixa, média e alta
+Classe para tarefa concluída
+Classe para erro nos campos
+Classe para card destacado no duplo clique
+
+Sugestão de visual:
+Fundo claro
+Cards brancos
+Botões com cor de destaque
+Bordas arredondadas
+Sombras leves
+Espaçamento entre os elementos
+
+--------------------------------------------------
+
+O QUE DEVE TER NO JAVASCRIPT
+
+Você deve separar o JavaScript em funções.
+
+Sugestão de funções:
+
+carregarPagina()
+cadastrarTarefa()
+validarFormulario()
+renderizarTarefas()
+concluirTarefa()
+excluirTarefa()
+filtrarTarefas()
+atualizarResumo()
+limparFormulario()
+mostrarMensagem()
+voltarAoTopo()
+
+--------------------------------------------------
+
+ORDEM SUGERIDA PARA FAZER O EXERCÍCIO
+
+1. Criar o HTML com todas as áreas da página
+2. Criar o CSS básico
+3. Capturar os elementos no JavaScript com querySelector
+4. Criar o array tarefas
+5. Fazer o submit do formulário funcionar
+6. Validar os campos obrigatórios
+7. Criar a função para renderizar as tarefas
+8. Criar o botão concluir
+9. Criar o botão excluir
+10. Criar os filtros
+11. Criar o resumo automático
+12. Adicionar eventos de mouse
+13. Adicionar eventos de teclado
+14. Adicionar eventos de focus e blur
+15. Adicionar resize e scroll
+16. Fazer o desafio extra, se quiser
+
+--------------------------------------------------
+
+CRITÉRIOS PARA SABER SE O EXERCÍCIO ESTÁ CERTO
+
+O exercício estará correto se:
+
+1. A página abrir sem erro no console
+2. O formulário não recarregar a página ao cadastrar
+3. Os campos obrigatórios forem validados
+4. As tarefas aparecerem na tela
+5. O botão Concluir funcionar
+6. O botão Excluir funcionar
+7. A pesquisa funcionar enquanto digita
+8. O filtro por categoria funcionar
+9. O checkbox de pendentes funcionar
+10. O resumo atualizar automaticamente
+11. Os eventos de mouse funcionarem
+12. Os eventos de teclado funcionarem
+13. Os eventos de focus e blur funcionarem
+14. O botão Voltar ao topo aparecer ao rolar a página
+15. O layout ficar organizado no computador e no celular
+
+--------------------------------------------------
+
+RESUMO DO EXERCÍCIO
+
+Você vai criar um site chamado Painel de Tarefas da Semana.
+
+Ele será uma página simples para cadastrar, listar, concluir, excluir e filtrar tarefas.
+
+O foco principal é praticar HTML, CSS e JavaScript com eventos reais usados em sistemas de empresa, principalmente formulário, validação, filtros, manipulação do DOM, arrays, objetos e atualização automática da tela.

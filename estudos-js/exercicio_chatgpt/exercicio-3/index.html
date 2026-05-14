@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Tarefas da Semana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="cabecalho-esquerda">
+            <img id="icone-prancheta-canecalho" src="img/prancheta-cabecalho.png" alt="ícone prancheta">
+            <div id="titulo-cabecalho">
+                <h1>Painel de Tarefas da Semana</h1>
+                <p>Organize suas tarefas de forma simples e prática.</p>
+            </div>
+        </div>
+        <div id="perfil-cabecalho">
+            <img id="icone-calendario" src="img/icone-calendario.png" alt="ícone calendário">
+            <span id="data-atual"></span>
+            <label for="input-foto-perfil" id="area-foto-perfil">
+                <img id="icone-perfil" src="img/perfil.png" alt="ícone perfil">
+            </label>
+            <input type="file" id="input-foto-perfil" accept="image/*">
+        </div>
+    </header>
+    <main id="conteudo">
+        <section id="formularios">
+            <!-- Cadastros -->
+            <div class="formulario">
+                <div class="titulo-formulario">
+                    <img id="imagem-mais" src="img/icone-mais.png" alt="+">
+                    <h2>Cadastrar Tarefa</h2>
+                </div>
+                <form id="formulario-cadastrar">
+                    <div class="campos-cadastrar">
+                        <label for="nome">Nome da Tarefa:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o nome da tarefa...">
+                    </div>
+                    <div id="campos-selecionar">
+                        <div class="campos-cadastrar">
+                            <label for="categoria">Categoria</label>
+                            <select name="cateoria" id="categoria">
+                                <option value="">Selecione</option>
+                                <option value="estudo">Estudo</option>
+                                <option value="casa">Casa</option>
+                                <option value="trabalho">Trabalho</option>
+                                <option value="pessoal">Pessoal</option>
+                            </select>
+                        </div>
+                        <div class="campos-cadastrar">
+                            <label for="prioridade">Prioridade</label>
+                            <select name="prioridade" id="prioridade">
+                                <option value="">Selecione</option>
+                                <option value="baixa">Baixa</option>
+                                <option value="media">Média</option>
+                                <option value="alta">Alta</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="campos-cadastrar">
+                        <label for="descricao">Descrição da tarefa:</label>
+                        <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva os detalhes da tarefa..."></textarea>
+                    </div>
+                    
+                    <div id="botoes-formulario">
+                        <button type="submit" id="botao-cadastrar"><img class="icone-botao" src="img/mais-branco.png" alt="mais">Cadastrar tarefa</button>
+                        <button type="reset" id="botao-limpar"><img class="icone-botao" src="img/icone-limpar.png" alt="limpar">Limpar formulário</button>
+                    </div>
+                    
+                </form>
+            </div>
+            <!-- Filtros -->
+            <div class="formulario">
+                <div class="titulo-formulario">
+                    <img id="imagem-filtro" src="img/icone-filtro.png" alt="filtro">
+                    <h2>Filtros</h2>
+                </div>
+                <form id="formulario-filtro">
+                    <div class="campos-filtro">
+                        <label for="pesquisar">Pesquisar tarefa pelo nome</label>
+                                        
+                        <div class="input-com-icone">
+                            <input type="text" name="pesquisar" id="pesquisar" placeholder="Digite para pesquisar...">
+                            <img src="img/icone-lupa.png" alt="lupa">
+                        </div>
+                    </div>
+                    <div class="campos-filtro">
+                        <label for="categoria-filtro">Filtrar por categoria</label>
+                        <select name="categoria-filtro" id="categoria-filtro">
+                            <option value="">Todas</option>
+                            <option value="estudo">Estudo</option>
+                            <option value="casa">Casa</option>
+                            <option value="trabalho">Trabalho</option>
+                            <option value="pessoal">Pessoal</option>
+                        </select>
+                    </div>
+                    <div class="campo-checkbox">
+                        <input type="checkbox" id="mostrar-pendentes" name="mostrar-pendentes">
+                        <label for="mostrar-pendentes">Mostrar somente tarefas pendentes</label>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Cards de Informação -->
+        <section id="cards-info">
+            <div class="card-info">
+                <div class="imagem-info">
+                    <img src="img/icone-prancheta-azul.PNG" alt="info azul">
+                </div>
+                <div class="texto-info">
+                    <p>Total de tarefas cadastradas</p>
+                    <span id="total-cadastradas">0</span>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="imagem-info">
+                    <img src="img/icone-relogio-laranja.PNG" alt="info laranja">
+                </div>
+                <div class="texto-info">
+                    <p>Total de tarefas pendentes</p>
+                    <span id="total-pendentes">0</span>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="imagem-info">
+                    <img src="img/icone-concluido-verde.PNG" alt="info verde">
+                </div>
+                <div class="texto-info">
+                    <p>Total de tarefas concluídas</p>
+                    <span id="total-concluidas">0</span>
+                </div>
+            </div>
+            <div class="card-info">
+                <div class="imagem-info">
+                    <img src="img/icone-prioridade-vermelho.PNG" alt="info vermelho">
+                </div>
+                <div class="texto-info">
+                    <p>Total de tarefas com prioridade alta</p>
+                    <span id="total-prioridade">0</span>
+                </div>
+            </div>
+        </section>
+        <!-- Minhas Tarefas -->
+        <section id="tarefas">
+            <div id="titulo-tarefas">
+                <img id="imagem-tarefas" src="img/icone-concluido-azul.png" alt="ícone tarefas">
+                <h2>Minhas Tarefas</h2>
+            </div>
+        
+            <div id="cards-tarefas">
+                <p id="mensagem-sem-tarefas">Nenhuma tarefa cadastrada ainda.</p>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1216 @@
+EXERCÍCIO DE HTML, CSS E JAVASCRIPT
+
+TEMA DO SITE:
+Meu Catálogo de Filmes
+
+NÍVEL:
+Básico para intermediário
+
+OBJETIVO DO EXERCÍCIO:
+Criar um site para organizar filmes em duas seções principais:
+
+1. Filmes assistidos
+2. Quero assistir
+
+A página principal será uma tela de catálogo, com cards de filmes lado a lado. O cadastro de filmes será feito em uma segunda página.
+
+O foco do exercício é praticar:
+
+HTML:
+- estrutura de página
+- header
+- main
+- section
+- cards
+- links entre páginas
+- formulários
+
+CSS:
+- flexbox
+- grid
+- cards lado a lado
+- botões com imagens
+- filtros escondidos
+- responsividade
+- paleta de cores própria
+
+JavaScript:
+- eventos
+- click
+- load
+- submit
+- input
+- change
+- arrays
+- objetos
+- localStorage
+- filtros
+- renderização dinâmica com innerHTML
+- atualização de contadores
+
+--------------------------------------------------
+
+ARQUIVOS DO PROJETO
+
+Crie esta estrutura:
+
+index.html
+cadastro.html
+css/style.css
+js/index.js
+js/cadastro.js
+img/logo-filmes.png
+img/perfil.png
+img/icone-calendario.png
+img/icone-filtro.png
+img/icone-mais.png
+img/icone-lixeira.png
+img/icone-assistido.png
+
+--------------------------------------------------
+
+PÁGINA PRINCIPAL:
+index.html
+
+A página principal será a tela onde aparecem os filmes cadastrados.
+
+Ela deve ter:
+
+1. Header
+2. Seção Filmes Assistidos
+3. Seção Quero Assistir
+
+--------------------------------------------------
+
+1. HEADER
+
+O header pode ficar parecido com o exercício anterior.
+
+Na esquerda:
+
+Logo ou imagem do site
+Título:
+Meu Catálogo de Filmes
+
+Subtítulo:
+Cadastre, avalie e organize seus filmes favoritos.
+
+Na direita:
+
+Ícone de calendário
+Data atual
+Imagem de perfil
+
+Evento usado:
+load
+
+O que deve fazer:
+Quando a página carregar, o JavaScript deve exibir a data atual no header.
+
+Exemplo:
+
+23 de maio de 2026
+
+--------------------------------------------------
+
+2. MAIN DA PÁGINA PRINCIPAL
+
+A main será dividida em duas seções:
+
+section id="secao-assistidos"
+
+section id="secao-quero-assistir"
+
+Cada seção deve ter:
+
+- título
+- descrição curta
+- contador de filmes
+- botão de filtro com imagem
+- botão Novo Filme
+- área onde os cards aparecem
+
+--------------------------------------------------
+
+3. SEÇÃO FILMES ASSISTIDOS
+
+Título:
+Filmes assistidos
+
+Descrição:
+Filmes que você já assistiu e avaliou.
+
+No topo da seção deve aparecer:
+
+Filmes assistidos
+Filmes que você já assistiu e avaliou.
+Total: 0 filmes
+
+Na direita do topo da seção:
+
+Botão de filtro
+Botão Novo Filme
+
+O botão de filtro deve ser uma imagem.
+
+Exemplo:
+
+<button id="botao-filtro-assistidos" class="botao-filtro">
+    <img src="img/icone-filtro.png" alt="Filtrar">
+</button>
+
+O botão Novo Filme deve levar para a página cadastro.html.
+
+Exemplo:
+
+<a href="cadastro.html" class="botao-novo-filme">Novo Filme</a>
+
+--------------------------------------------------
+
+4. FILTROS DA SEÇÃO FILMES ASSISTIDOS
+
+Ao clicar no botão de filtro da seção Filmes Assistidos, deve aparecer uma área de filtros.
+
+Essa área começa escondida.
+
+Filtros dessa seção:
+
+Campo de texto:
+Pesquisar filme pelo nome
+
+Select:
+Filtrar por gênero
+
+Opções:
+Todos
+Ação
+Comédia
+Drama
+Terror
+Animação
+Ficção científica
+
+Select:
+Filtrar por nota
+
+Opções:
+Todas
+1
+2
+3
+4
+5
+
+Botão opcional:
+Limpar filtros
+
+Eventos usados:
+
+click:
+abrir e fechar a área de filtros
+
+input:
+filtrar enquanto digita o nome do filme
+
+change:
+filtrar quando mudar gênero ou nota
+
+--------------------------------------------------
+
+5. CARDS DA SEÇÃO FILMES ASSISTIDOS
+
+Os filmes assistidos devem aparecer em cards lado a lado.
+
+Cada card de filme assistido deve mostrar:
+
+- nome do filme
+- gênero
+- nota
+- comentário
+- status: Assistido
+- botão Mover para Quero Assistir
+- botão Excluir
+
+Exemplo visual do card:
+
+--------------------------------------------------
+Interestelar
+
+Gênero: Ficção científica
+Nota: 5
+
+Comentário:
+Filme sobre espaço, tempo e emoções.
+
+Status: Assistido
+
+[Mover para Quero Assistir]
+[Excluir]
+--------------------------------------------------
+
+O botão Mover para Quero Assistir deve alterar o status do filme.
+
+Quando clicar nele, o filme sai da seção Filmes Assistidos e vai para a seção Quero Assistir.
+
+--------------------------------------------------
+
+6. SEÇÃO QUERO ASSISTIR
+
+Título:
+Quero assistir
+
+Descrição:
+Filmes que você pretende assistir depois.
+
+No topo da seção deve aparecer:
+
+Quero assistir
+Filmes salvos para assistir depois.
+Total: 0 filmes
+
+Na direita do topo da seção:
+
+Botão de filtro
+Botão Novo Filme
+
+O botão de filtro deve ser uma imagem.
+
+Exemplo:
+
+<button id="botao-filtro-quero" class="botao-filtro">
+    <img src="img/icone-filtro.png" alt="Filtrar">
+</button>
+
+O botão Novo Filme deve levar para a página cadastro.html.
+
+Exemplo:
+
+<a href="cadastro.html" class="botao-novo-filme">Novo Filme</a>
+
+--------------------------------------------------
+
+7. FILTROS DA SEÇÃO QUERO ASSISTIR
+
+Ao clicar no botão de filtro da seção Quero Assistir, deve aparecer uma área de filtros.
+
+Essa área começa escondida.
+
+Filtros dessa seção:
+
+Campo de texto:
+Pesquisar filme pelo nome
+
+Select:
+Filtrar por gênero
+
+Opções:
+Todos
+Ação
+Comédia
+Drama
+Terror
+Animação
+Ficção científica
+
+Select:
+Filtrar por prioridade
+
+Opções:
+Todas
+Baixa
+Média
+Alta
+
+Botão opcional:
+Limpar filtros
+
+Eventos usados:
+
+click:
+abrir e fechar a área de filtros
+
+input:
+filtrar enquanto digita o nome do filme
+
+change:
+filtrar quando mudar gênero ou prioridade
+
+--------------------------------------------------
+
+8. CARDS DA SEÇÃO QUERO ASSISTIR
+
+Os filmes que você quer assistir devem aparecer em cards lado a lado.
+
+Cada card deve mostrar:
+
+- nome do filme
+- gênero
+- prioridade
+- motivo ou comentário
+- status: Quero assistir
+- botão Marcar como Assistido
+- botão Excluir
+
+Exemplo visual do card:
+
+--------------------------------------------------
+Duna
+
+Gênero: Ficção científica
+Prioridade: Alta
+
+Motivo:
+Quero assistir porque gosto de filmes de ficção.
+
+Status: Quero assistir
+
+[Marcar como Assistido]
+[Excluir]
+--------------------------------------------------
+
+O botão Marcar como Assistido deve alterar o status do filme.
+
+Quando clicar nele, o filme sai da seção Quero Assistir e vai para a seção Filmes Assistidos.
+
+--------------------------------------------------
+
+PÁGINA DE CADASTRO:
+cadastro.html
+
+Essa será a página para cadastrar novos filmes.
+
+Ela deve ter:
+
+1. Header igual ao da página principal
+2. Formulário de cadastro
+3. Botão Voltar para catálogo
+4. Botão Cadastrar Filme
+5. Botão Limpar formulário
+
+--------------------------------------------------
+
+9. FORMULÁRIO DE CADASTRO
+
+Campos:
+
+Nome do filme
+Gênero
+Status
+Nota
+Prioridade
+Comentário ou motivo
+
+--------------------------------------------------
+
+10. CAMPO NOME DO FILME
+
+Tipo:
+input text
+
+Obrigatório:
+Sim
+
+Placeholder:
+Digite o nome do filme...
+
+--------------------------------------------------
+
+11. CAMPO GÊNERO
+
+Tipo:
+select
+
+Opções:
+
+Selecione
+Ação
+Comédia
+Drama
+Terror
+Animação
+Ficção científica
+
+Obrigatório:
+Sim
+
+--------------------------------------------------
+
+12. CAMPO STATUS
+
+Tipo:
+select
+
+Opções:
+
+Selecione
+Já assisti
+Quero assistir
+
+Obrigatório:
+Sim
+
+Esse campo define em qual seção o filme vai aparecer na página principal.
+
+Se escolher:
+Já assisti
+
+O filme aparece na seção:
+Filmes assistidos
+
+Se escolher:
+Quero assistir
+
+O filme aparece na seção:
+Quero assistir
+
+--------------------------------------------------
+
+13. CAMPO NOTA
+
+Tipo:
+select
+
+Opções:
+
+Selecione
+1
+2
+3
+4
+5
+
+Esse campo só deve aparecer quando o usuário escolher no status:
+
+Já assisti
+
+Se o usuário escolher Quero assistir, esse campo deve ficar escondido.
+
+Evento usado:
+change
+
+O que deve fazer:
+Quando o status mudar para Já assisti, mostrar o campo Nota.
+
+--------------------------------------------------
+
+14. CAMPO PRIORIDADE
+
+Tipo:
+select
+
+Opções:
+
+Selecione
+Baixa
+Média
+Alta
+
+Esse campo só deve aparecer quando o usuário escolher no status:
+
+Quero assistir
+
+Se o usuário escolher Já assisti, esse campo deve ficar escondido.
+
+Evento usado:
+change
+
+O que deve fazer:
+Quando o status mudar para Quero assistir, mostrar o campo Prioridade.
+
+--------------------------------------------------
+
+15. CAMPO COMENTÁRIO OU MOTIVO
+
+Tipo:
+textarea
+
+Obrigatório:
+Sim
+
+Se o filme for assistido, o campo representa um comentário.
+
+Exemplo:
+Gostei muito da história e dos efeitos visuais.
+
+Se o filme for Quero assistir, o campo representa o motivo.
+
+Exemplo:
+Quero assistir porque me indicaram esse filme.
+
+--------------------------------------------------
+
+16. BOTÕES DA PÁGINA DE CADASTRO
+
+Botão Cadastrar Filme:
+
+Deve salvar o filme no localStorage e voltar para index.html.
+
+Botão Limpar formulário:
+
+Deve limpar os campos.
+
+Botão Voltar para catálogo:
+
+Deve voltar para index.html sem cadastrar nada.
+
+--------------------------------------------------
+
+17. OBJETO FILME
+
+Cada filme deve ser salvo como um objeto dentro de um array.
+
+Exemplo de filme assistido:
+
+{
+    id: 1,
+    nome: "Interestelar",
+    genero: "ficcao",
+    status: "assistido",
+    nota: "5",
+    prioridade: "",
+    comentario: "Filme sobre espaço, tempo e emoções."
+}
+
+Exemplo de filme que quero assistir:
+
+{
+    id: 2,
+    nome: "Duna",
+    genero: "ficcao",
+    status: "quero-assistir",
+    nota: "",
+    prioridade: "alta",
+    comentario: "Quero assistir porque gosto de ficção científica."
+}
+
+--------------------------------------------------
+
+18. ARRAY PRINCIPAL
+
+No JavaScript, todos os filmes devem ficar em um array:
+
+let filmes = [];
+
+Esse array será salvo no localStorage.
+
+--------------------------------------------------
+
+19. LOCALSTORAGE
+
+Como o cadastro acontece em uma página diferente, você precisa usar localStorage.
+
+Ao cadastrar um filme:
+
+1. Buscar os filmes já salvos
+2. Converter para array
+3. Adicionar o novo filme
+4. Salvar novamente no localStorage
+5. Voltar para index.html
+
+Exemplo de lógica:
+
+const filmesSalvos = localStorage.getItem("filmes");
+
+if (filmesSalvos) {
+    filmes = JSON.parse(filmesSalvos);
+}
+
+filmes.push(novoFilme);
+
+localStorage.setItem("filmes", JSON.stringify(filmes));
+
+window.location.href = "index.html";
+
+--------------------------------------------------
+
+20. RENDERIZAÇÃO NA PÁGINA PRINCIPAL
+
+Quando a index.html carregar:
+
+1. Buscar os filmes no localStorage
+2. Separar os filmes assistidos
+3. Separar os filmes que quero assistir
+4. Renderizar os cards nas seções corretas
+5. Atualizar os contadores
+
+Exemplo de separação:
+
+const filmesAssistidos = filmes.filter(function (filme) {
+    return filme.status === "assistido";
+});
+
+const filmesQueroAssistir = filmes.filter(function (filme) {
+    return filme.status === "quero-assistir";
+});
+
+--------------------------------------------------
+
+21. EVENTOS OBRIGATÓRIOS
+
+load
+
+Onde usar:
+index.html e cadastro.html
+
+O que faz:
+- mostrar data atual
+- carregar filmes do localStorage
+- renderizar cards na tela
+
+--------------------------------------------------
+
+click
+
+Onde usar:
+- botão de filtro
+- botão Novo Filme
+- botão Excluir
+- botão Marcar como Assistido
+- botão Mover para Quero Assistir
+
+O que faz:
+- abrir e fechar filtros
+- trocar de página
+- excluir filme
+- alterar status do filme
+
+--------------------------------------------------
+
+submit
+
+Onde usar:
+formulário de cadastro
+
+O que faz:
+- impedir o recarregamento da página
+- validar campos
+- cadastrar filme
+- salvar no localStorage
+- voltar para index.html
+
+--------------------------------------------------
+
+input
+
+Onde usar:
+campos de pesquisa dos filtros
+
+O que faz:
+- filtrar os filmes enquanto o usuário digita
+
+--------------------------------------------------
+
+change
+
+Onde usar:
+- selects dos filtros
+- select de status no cadastro
+
+O que faz:
+- aplicar filtros
+- mostrar campo Nota ou Prioridade no formulário
+
+--------------------------------------------------
+
+focus
+
+Onde usar:
+campos do formulário de cadastro
+
+O que faz:
+- destacar o campo selecionado
+
+--------------------------------------------------
+
+blur
+
+Onde usar:
+campos obrigatórios do formulário
+
+O que faz:
+- validar campo vazio quando o usuário sair dele
+
+--------------------------------------------------
+
+mouseover
+
+Onde usar:
+cards dos filmes
+
+O que faz:
+- destacar o card ao passar o mouse
+
+--------------------------------------------------
+
+mouseout
+
+Onde usar:
+cards dos filmes
+
+O que faz:
+- remover destaque do card
+
+--------------------------------------------------
+
+dblclick
+
+Onde usar:
+cards dos filmes
+
+O que faz:
+- marcar ou desmarcar filme como favorito
+
+Esse recurso pode ser desafio extra.
+
+--------------------------------------------------
+
+22. FUNÇÕES SUGERIDAS PARA index.js
+
+carregarDataAtual()
+carregarFilmes()
+salvarFilmes()
+renderizarFilmes()
+renderizarFilmesAssistidos()
+renderizarFilmesQueroAssistir()
+filtrarFilmesAssistidos()
+filtrarFilmesQueroAssistir()
+abrirFecharFiltroAssistidos()
+abrirFecharFiltroQueroAssistir()
+moverParaQueroAssistir()
+marcarComoAssistido()
+excluirFilme()
+atualizarContadores()
+formatarTexto()
+
+--------------------------------------------------
+
+23. FUNÇÕES SUGERIDAS PARA cadastro.js
+
+carregarDataAtual()
+carregarFilmes()
+salvarFilmes()
+mostrarCamposPorStatus()
+validarFormulario()
+cadastrarFilme()
+limparFormulario()
+voltarParaCatalogo()
+formatarTexto()
+
+--------------------------------------------------
+
+24. ESTRUTURA SUGERIDA DO index.html
+
+<header>
+    <div class="cabecalho-esquerda">
+        <img src="img/logo-filmes.png" alt="Logo">
+        <div>
+            <h1>Meu Catálogo de Filmes</h1>
+            <p>Cadastre, avalie e organize seus filmes favoritos.</p>
+        </div>
+    </div>
+
+    <div class="cabecalho-direita">
+        <img src="img/icone-calendario.png" alt="Calendário">
+        <span id="data-atual"></span>
+        <img src="img/perfil.png" alt="Perfil">
+    </div>
+</header>
+
+<main>
+    <section id="secao-assistidos" class="secao-filmes">
+        <div class="topo-secao">
+            <div>
+                <h2>Filmes assistidos</h2>
+                <p>Filmes que você já assistiu e avaliou.</p>
+                <span id="contador-assistidos">0 filmes</span>
+            </div>
+
+            <div class="acoes-secao">
+                <button id="botao-filtro-assistidos" class="botao-filtro">
+                    <img src="img/icone-filtro.png" alt="Filtro">
+                </button>
+
+                <a href="cadastro.html" class="botao-novo-filme">
+                    Novo Filme
+                </a>
+            </div>
+        </div>
+
+        <div id="filtros-assistidos" class="area-filtros escondido">
+            <input type="text" id="pesquisar-assistidos" placeholder="Pesquisar filme...">
+
+            <select id="genero-assistidos">
+                <option value="">Todos os gêneros</option>
+                <option value="acao">Ação</option>
+                <option value="comedia">Comédia</option>
+                <option value="drama">Drama</option>
+                <option value="terror">Terror</option>
+                <option value="animacao">Animação</option>
+                <option value="ficcao">Ficção científica</option>
+            </select>
+
+            <select id="nota-assistidos">
+                <option value="">Todas as notas</option>
+                <option value="1">Nota 1</option>
+                <option value="2">Nota 2</option>
+                <option value="3">Nota 3</option>
+                <option value="4">Nota 4</option>
+                <option value="5">Nota 5</option>
+            </select>
+        </div>
+
+        <div id="cards-assistidos" class="cards-filmes">
+            <p>Nenhum filme assistido cadastrado ainda.</p>
+        </div>
+    </section>
+
+    <section id="secao-quero-assistir" class="secao-filmes">
+        <div class="topo-secao">
+            <div>
+                <h2>Quero assistir</h2>
+                <p>Filmes salvos para assistir depois.</p>
+                <span id="contador-quero-assistir">0 filmes</span>
+            </div>
+
+            <div class="acoes-secao">
+                <button id="botao-filtro-quero" class="botao-filtro">
+                    <img src="img/icone-filtro.png" alt="Filtro">
+                </button>
+
+                <a href="cadastro.html" class="botao-novo-filme">
+                    Novo Filme
+                </a>
+            </div>
+        </div>
+
+        <div id="filtros-quero" class="area-filtros escondido">
+            <input type="text" id="pesquisar-quero" placeholder="Pesquisar filme...">
+
+            <select id="genero-quero">
+                <option value="">Todos os gêneros</option>
+                <option value="acao">Ação</option>
+                <option value="comedia">Comédia</option>
+                <option value="drama">Drama</option>
+                <option value="terror">Terror</option>
+                <option value="animacao">Animação</option>
+                <option value="ficcao">Ficção científica</option>
+            </select>
+
+            <select id="prioridade-quero">
+                <option value="">Todas as prioridades</option>
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+        </div>
+
+        <div id="cards-quero" class="cards-filmes">
+            <p>Nenhum filme para assistir cadastrado ainda.</p>
+        </div>
+    </section>
+</main>
+
+--------------------------------------------------
+
+25. ESTRUTURA SUGERIDA DO cadastro.html
+
+<header>
+    <div class="cabecalho-esquerda">
+        <img src="img/logo-filmes.png" alt="Logo">
+        <div>
+            <h1>Meu Catálogo de Filmes</h1>
+            <p>Cadastre, avalie e organize seus filmes favoritos.</p>
+        </div>
+    </div>
+
+    <div class="cabecalho-direita">
+        <img src="img/icone-calendario.png" alt="Calendário">
+        <span id="data-atual"></span>
+        <img src="img/perfil.png" alt="Perfil">
+    </div>
+</header>
+
+<main>
+    <section id="cadastro-filme">
+        <div class="topo-cadastro">
+            <div>
+                <h2>Novo Filme</h2>
+                <p>Preencha as informações do filme.</p>
+            </div>
+
+            <a href="index.html" class="botao-voltar">
+                Voltar para catálogo
+            </a>
+        </div>
+
+        <form id="formulario-filme">
+            <div class="campo-formulario">
+                <label for="nome-filme">Nome do filme</label>
+                <input type="text" id="nome-filme" placeholder="Digite o nome do filme...">
+            </div>
+
+            <div class="campo-formulario">
+                <label for="genero-filme">Gênero</label>
+                <select id="genero-filme">
+                    <option value="">Selecione</option>
+                    <option value="acao">Ação</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="terror">Terror</option>
+                    <option value="animacao">Animação</option>
+                    <option value="ficcao">Ficção científica</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="status-filme">Status</label>
+                <select id="status-filme">
+                    <option value="">Selecione</option>
+                    <option value="assistido">Já assisti</option>
+                    <option value="quero-assistir">Quero assistir</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario escondido" id="campo-nota">
+                <label for="nota-filme">Nota</label>
+                <select id="nota-filme">
+                    <option value="">Selecione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario escondido" id="campo-prioridade">
+                <label for="prioridade-filme">Prioridade</label>
+                <select id="prioridade-filme">
+                    <option value="">Selecione</option>
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Média</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="comentario-filme">Comentário ou motivo</label>
+                <textarea id="comentario-filme" placeholder="Digite um comentário ou motivo..."></textarea>
+            </div>
+
+            <div class="botoes-formulario">
+                <button type="submit">Cadastrar Filme</button>
+                <button type="reset">Limpar formulário</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+--------------------------------------------------
+
+26. CSS PRINCIPAL QUE VOCÊ DEVE USAR
+
+Use uma paleta diferente do exercício de tarefas.
+
+Sugestão de cores:
+
+Fundo:
+#f8f5ff
+
+Header:
+#160f2e
+
+Cor principal:
+#7c3aed
+
+Cor secundária:
+#ff6b4a
+
+Card:
+#ffffff
+
+Texto principal:
+#1f1f2e
+
+Texto secundário:
+#6b7280
+
+Verde para assistido:
+#15803d
+
+Laranja para quero assistir:
+#f97316
+
+--------------------------------------------------
+
+27. CLASSES IMPORTANTES
+
+.escondido {
+    display: none;
+}
+
+.secao-filmes {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.topo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acoes-secao {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.cards-filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.card-filme {
+    background-color: white;
+    border-radius: 14px;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.card-filme:hover {
+    transform: translateY(-4px);
+}
+
+.area-filtros {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+}
+
+.botao-filtro img {
+    width: 24px;
+}
+
+.botao-novo-filme {
+    text-decoration: none;
+    background-color: #7c3aed;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+--------------------------------------------------
+
+28. FUNCIONALIDADES OBRIGATÓRIAS
+
+1. Mostrar data atual no header.
+
+2. Ter duas seções na página principal:
+- Filmes assistidos
+- Quero assistir
+
+3. Cada seção deve ter botão de filtro.
+
+4. Ao clicar no botão de filtro, os filtros aparecem ou somem.
+
+5. Cada seção deve ter botão Novo Filme.
+
+6. Ao clicar em Novo Filme, abrir cadastro.html.
+
+7. O cadastro deve salvar o filme no localStorage.
+
+8. Ao voltar para index.html, o filme deve aparecer na seção correta.
+
+9. Filmes assistidos devem aparecer na seção Filmes Assistidos.
+
+10. Filmes com status Quero assistir devem aparecer na seção Quero Assistir.
+
+11. Os cards devem ficar lado a lado.
+
+12. A seção Filmes Assistidos deve filtrar por:
+- nome
+- gênero
+- nota
+
+13. A seção Quero Assistir deve filtrar por:
+- nome
+- gênero
+- prioridade
+
+14. Deve ser possível excluir filme.
+
+15. Deve ser possível mover um filme de Assistido para Quero Assistir.
+
+16. Deve ser possível mover um filme de Quero Assistir para Assistido.
+
+17. Os contadores das seções devem atualizar automaticamente.
+
+--------------------------------------------------
+
+29. DESAFIOS EXTRAS
+
+1. Adicionar imagem/capa do filme.
+
+2. Salvar imagem no localStorage usando FileReader.
+
+3. Criar botão Editar.
+
+4. Criar favoritos com duplo clique no card.
+
+5. Criar filtro de favoritos.
+
+6. Criar botão Limpar filtros.
+
+7. Criar ordenação por nome, nota ou prioridade.
+
+--------------------------------------------------
+
+30. CRITÉRIOS PARA SABER SE O EXERCÍCIO ESTÁ CERTO
+
+O exercício estará correto se:
+
+1. O header aparecer corretamente.
+2. A data atual aparecer no header.
+3. A página principal tiver duas seções.
+4. O botão de filtro abrir e fechar filtros.
+5. O botão Novo Filme abrir a página cadastro.html.
+6. O formulário cadastrar filme sem recarregar a página.
+7. O filme for salvo no localStorage.
+8. O filme aparecer na seção correta.
+9. Os cards ficarem lado a lado.
+10. O filtro da seção Assistidos funcionar.
+11. O filtro da seção Quero Assistir funcionar.
+12. O botão Excluir funcionar.
+13. O botão de mudar status funcionar.
+14. Os contadores atualizarem.
+15. O layout ficar diferente do exercício de tarefas.
+
+--------------------------------------------------
+
+RESUMO DO EXERCÍCIO
+
+Você vai criar um site chamado Meu Catálogo de Filmes.
+
+A página principal terá duas seções:
+
+- Filmes assistidos
+- Quero assistir
+
+Cada seção terá:
+- botão de filtro
+- botão Novo Filme
+- cards de filmes
+
+O botão de filtro abre as opções de filtro daquela seção.
+
+O botão Novo Filme leva para uma nova página de cadastro.
+
+O cadastro salva o filme no localStorage e depois o filme aparece automaticamente na seção correta da página principal.

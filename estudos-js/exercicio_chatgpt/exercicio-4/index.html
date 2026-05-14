@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu catálogo de filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="cabecalho-logo">
+            <img id="icone-cinema" src="img/logo-filmes.png" alt="ícone cinema">
+            <div id="texto-logo">
+                <h1>Meu Catálogo de Filmes</h1>
+                <p>Cadastre, avalie e organize seus filmes favoritos</p>
+            </div>
+        </div>
+        <div id="area-perfil">
+            <span id="data-atual"></span>
+            <label for="input-foto-perfil" id="area-foto-perfil">
+                <img id="icone-perfil" src="img/perfil.png" alt="ícone perfil">
+            </label>
+            <input type="file" id="input-foto-perfil" accept="image/*">
+        </div> 
+    </header>
+    <main>
+        <section id="area-assistidos">
+            <div id="area-titulo-assistidos">
+                <img src="img/icone-assistidos.png" alt="Ícone de filmes assistidos">
+                <div id="texto-titulo-assistidos">
+                    <h2>Filmes Assistidos</h2>
+                    <p>Filmes que você já assistiu</p>
+                    <span id="total-assistidos">Total: 0 filmes</span>
+                </div>
+                <div id="botao-filtro-assistidos">
+                    <button id="botao-filtro-assistidos">
+                        <img id="icone-filtro-assistidos" src="img/filtro-assistidos.png" alt="ícone filtro">
+                    </button>
+                    <button id="botao-cadastrar-assistidos">
+                        <img class="icone-mais" src="img/mais-branco.png" alt="ícone mais">
+                        Novo filme
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="area-assistir">
+            <div id="area-titulos-assistir">
+                <img src="img/icone-assistir.png" alt="ícone de filmes a assistir">
+                <div id="texto-titulo-assistir">
+                    <h2>Quero assistir</h2>
+                    <p>Filmes salvos para assistir depois</p>
+                    <span id="total-assistir">Total: 0 filmes</span>
+                </div>
+                <div id="botao-filtro-assistir">
+                    <button id="botao-filtro-assistir">
+                        <img id="icone-filtro-assistir" src="img/filtro-assistir.png" alt="ícone filtro">
+                    </button>
+                    <button id="botao-cadastrar-assistir">
+                        <img class="icone-mais" src="img/mais-branco.png" alt="ícone mais">
+                        Novo filme
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
